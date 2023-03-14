@@ -3,7 +3,8 @@
 
       <Header/>
       <Todos/>   
-    
+      <router-view></router-view>
+
   </div>
   
 </template>
