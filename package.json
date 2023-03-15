@@ -9,8 +9,14 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "core-js": "^3.8.3",
     "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
