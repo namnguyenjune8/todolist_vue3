@@ -33,7 +33,7 @@ export default {
   async login() {
     // Gọi API đăng nhập và xử lý kết quả
     try {
-      const response = await axios.post('/signin', {
+      const response = await axios.post('/router/signin', {
         username: this.user,
         password: this.password
       })

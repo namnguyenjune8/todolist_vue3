@@ -31,10 +31,10 @@ passport.use(new JwtStrategy({
 }));
 
 //Tạo API đăng nhập
-router.post('/signin', (req, res) => {
-    const { email, password } = req.body;
+router.post('/router/signin', (req, res) => {
+    const { user, password } = req.body;
 
-    User.findOne({ email: email }, (err, user) => {
+    User.findOne({ user: user }, (err, user) => {
         if(err) {
             return res.status(500).json({msg: 'Lỗi Server'});
         }
