@@ -34,7 +34,7 @@ export default {
     // Gọi API đăng nhập và xử lý kết quả
     try {
       const response = await axios.post('/router/signin', {
-        username: this.user,
+        user: this.user,
         password: this.password
       })
       // Xử lý kết quả trả về ở đây
