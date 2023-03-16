@@ -31,32 +31,32 @@ passport.use(new JwtStrategy({
 }));
 
 //Tạo API đăng nhập
-router.post('/', (req, res) => {
+router.post('/signin', (req, res) => {
     const { email, password } = req.body;
 
     User.findOne({ email: email }, (err, user) => {
         if(err) {
-            return res.status(500).json({msg: 'Server error'});
+            return res.status(500).json({msg: 'Lỗi Server'});
         }
         if(!user) {
-            return res.status(401).json({msg: 'User not found'});
+            return res.status(401).json({msg: 'Không tìm thấy user'});
         }
         bcrypt.compare(password, user.password, (err, isMatch) => {
             if(err) {
-                return res.status(500).json({msg: 'Server error'});
+                return res.status(500).json({msg: 'Lỗi Server'});
             }
             if(isMatch) {
                 //Tạo 1 JWT token và trả về cho người dùng
                 const payload = {user_id: user._id};
                 jwt.sign(payload, 'your-secret-key', (err, token) => {
                     if(err) {
-                        return res.status(500).json({msg: 'Server error'});
+                        return res.status(500).json({msg: 'Lỗi Server'});
                     }
                     return res.status(200).json({token: `Bearer ${token}`});
                 })
             }
             else {
-                return res.status(401).json({msg: 'Wrong password'});
+                return res.status(401).json({msg: 'Sai mật khẩu'});
             }
         });
     });

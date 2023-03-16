@@ -18,8 +18,10 @@
     </form>
     <a href="./sign-up">Đăng ký ngay!</a>
     </div>
+    <div v-if="error" class="error">{{ error }}</div>
   </template>
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -28,11 +30,34 @@ export default {
     };
   },
   methods: {
-    async login() {
-      // Gọi API đăng nhập và xử lý kết quả
+  async login() {
+    // Gọi API đăng nhập và xử lý kết quả
+    try {
+      const response = await axios.post('/signin', {
+        username: this.user,
+        password: this.password
+      })
+      // Xử lý kết quả trả về ở đây
+      if (response.status === 200 && response.data.accessToken) {
+        localStorage.setItem('accessToken', response.data.accessToken)
+        this.$router.push('/app')
+      } else {
+        throw new Error('Không hợp lệ')
+      }
+    } catch (error) {
+      // Xử lý lỗi ở đây
+      console.log(error)
+      this.errorMessage = 'User hoặc password không chính xác'
     }
   }
-};
+}
+}
+
+
+
+
+  
+
 </script>
 <style scoped>
 /* .signin {

@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -26,10 +27,26 @@ export default {
     };
   },
   methods: {
-    async signup() {
-      // Gọi API đăng ký và xử lý kết quả
+  async signup() {
+    // Gọi API đăng ký và xử lý kết quả
+    try {
+      const response = await axios.post('/api/signup', {
+        username: this.user,
+        password: this.password
+      })
+      // Xử lý kết quả trả về ở đây
+      if (response.status === 200) {
+        this.successMessage = 'Đăng ký thành công'
+      } else {
+        throw new Error('Đăng ký không thành công')
+      }
+    } catch (error) {
+      // Xử lý lỗi ở đây
+      console.log(error)
+      this.errorMessage = 'Đăng ký không thành công'
     }
   }
+}
 };
 </script>
 <style>
