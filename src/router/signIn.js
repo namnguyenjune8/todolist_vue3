@@ -18,51 +18,52 @@ router.use(bodyParser.json());
 //Xác thực JWT với passport
 passport.use(new JwtStrategy({
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: secret 
+    secretOrKey: secret
 }, (jwt_payload, done) => {
     User.findById(jwt_payload.id, (err, user) => {
-        if(err) {
-            return done(err, false);        
+        if (err) {
+            return done(err, false);
         }
         if (user) {
             return done(null, user);
 
-        }else {
+        } else {
             return done(null, false);
         }
     });
 }));
 
 //Tạo API đăng nhập
-router.post('/', (req, res) => {
+router.post('/signin', (req, res) => {
     const { user, password } = req.body;
 
-    User.findOne({ user: user }, (err, user) => {
-        if(err) {
-            return res.status(500).json({msg: 'Lỗi Server'});
-        }
-        if(!user) {
-            return res.status(401).json({msg: 'Không tìm thấy user'});
-        }
-        bcrypt.compare(password, user.password, (err, isMatch) => {
-            if(err) {
-                return res.status(500).json({msg: 'Lỗi Server'});
+    User.findOne({ user: user }).exec()
+        .then(foundUser => {
+            if (!foundUser) {
+                return res.status(401).json({ msg: 'Không tìm thấy user' });
             }
-            if(isMatch) {
-                //Tạo 1 JWT token và trả về cho người dùng
-                const payload = {user_id: user._id};
-                jwt.sign(payload, secret, (err, token) => {
-                    if(err) {
-                        return res.status(500).json({msg: 'Lỗi Server'});
-                    }
-                    return res.status(200).json({token: `Bearer ${token}`});
-                })
-            }
-            else {
-                return res.status(401).json({msg: 'Sai mật khẩu'});
-            }
+            bcrypt.compare(password, foundUser.password, (err, isMatch) => {
+                if (err) {
+                    return res.status(500).json({ msg: 'Lỗi Server' });
+                }
+                if (isMatch) {
+                    //Tạo 1 JWT token và trả về cho người dùng
+                    const payload = { user_id: foundUser._id };
+                    jwt.sign(payload, secret, (err, token) => {
+                        if (err) {
+                            return res.status(500).json({ msg: 'Lỗi Server' });
+                        }
+                        return res.status(200).json({ token: `Bearer ${token}` });
+                    })
+                }
+                else {
+                    return res.status(401).json({ msg: 'Sai mật khẩu' });
+                }
+            });
+        })
+        .catch(err => {
+            return res.status(500).json({ msg: 'Lỗi Server' });
         });
-    });
 });
 
 module.exports = router;

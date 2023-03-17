@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 const signInRouter = require(__dirname + '/src/router/signIn');
 const signUpRouter = require(__dirname + '/src/router/userExisted');
 
+app.use(cors());
 app.use(express.json());
 app.use('/signin', signInRouter);
 app.use('/signup', signUpRouter);
