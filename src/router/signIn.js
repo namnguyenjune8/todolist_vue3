@@ -7,6 +7,9 @@ const passport = require('passport');
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
+const crypto = require('crypto');
+const secret = crypto.randomBytes(32).toString('hex');
+
 const User = require('../models/users');
 
 router.use(bodyParser.urlencoded({ extended: false }));
@@ -15,11 +18,11 @@ router.use(bodyParser.json());
 //Xác thực JWT với passport
 passport.use(new JwtStrategy({
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrkey: 'your-secret-key'
+    secretOrKey: secret 
 }, (jwt_payload, done) => {
     User.findById(jwt_payload.id, (err, user) => {
         if(err) {
-            return done(err, false);
+            return done(err, false);        
         }
         if (user) {
             return done(null, user);
@@ -31,7 +34,7 @@ passport.use(new JwtStrategy({
 }));
 
 //Tạo API đăng nhập
-router.post('/router/signin', (req, res) => {
+router.post('/', (req, res) => {
     const { user, password } = req.body;
 
     User.findOne({ user: user }, (err, user) => {
@@ -48,7 +51,7 @@ router.post('/router/signin', (req, res) => {
             if(isMatch) {
                 //Tạo 1 JWT token và trả về cho người dùng
                 const payload = {user_id: user._id};
-                jwt.sign(payload, 'your-secret-key', (err, token) => {
+                jwt.sign(payload, secret, (err, token) => {
                     if(err) {
                         return res.status(500).json({msg: 'Lỗi Server'});
                     }

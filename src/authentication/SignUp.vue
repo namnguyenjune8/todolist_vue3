@@ -30,13 +30,13 @@ export default {
   async signup() {
     // Gọi API đăng ký và xử lý kết quả
     try {
-      const response = await axios.post('/api/signup', {
-        username: this.user,
+      const response = await axios.post('http://localhost:3000/signup', {
+        user: this.user,
         password: this.password
       })
       // Xử lý kết quả trả về ở đây
       if (response.status === 200) {
-        this.successMessage = 'Đăng ký thành công'
+        this.successMessage = 'Đăng ký thành công'  
       } else {
         throw new Error('Đăng ký không thành công')
       }

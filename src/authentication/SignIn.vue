@@ -17,6 +17,7 @@
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
     <a href="./sign-up">Đăng ký ngay!</a>
+    <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
     </div>
     <div v-if="error" class="error">{{ error }}</div>
   </template>
@@ -33,17 +34,17 @@ export default {
   async login() {
     // Gọi API đăng nhập và xử lý kết quả
     try {
-      const response = await axios.post('/router/signin', {
-        user: this.user,
-        password: this.password
-      })
-      // Xử lý kết quả trả về ở đây
+    const response = await axios.post('http://localhost:3000/signin', {
+      user: this.user,
+      password: this.password
+    });
+      // Xử lý kết quả trả về ở đây 
       if (response.status === 200 && response.data.accessToken) {
-        localStorage.setItem('accessToken', response.data.accessToken)
-        this.$router.push('/app')
-      } else {
-        throw new Error('Không hợp lệ')
-      }
+      localStorage.setItem('accessToken', response.data.accessToken);
+      this.$router.push('/app');
+    } else {
+      throw new Error('Invalid login');
+    }
     } catch (error) {
       // Xử lý lỗi ở đây
       console.log(error)
@@ -100,5 +101,8 @@ input[type="text"] {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
+}
+.error {
+  color: red; 
 }
 </style>

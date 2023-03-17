@@ -4,10 +4,12 @@ const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
-const users = require('@/models/users');
+const signInRouter = require(__dirname + '/src/router/signIn');
+const signUpRouter = require(__dirname + '/src/router/userExisted');
 
 app.use(express.json());
-app.use('/models/users', users);
+app.use('/signin', signInRouter);
+app.use('/signup', signUpRouter);
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist')));
