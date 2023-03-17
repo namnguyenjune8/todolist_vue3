@@ -13,6 +13,8 @@
       <button type="submit"  class="btn btn-primary">Sign Up</button>
     </form>
     <a href="./sign-in">Đã có tài khoản?</a>
+    <div v-if="successMessage">{{ successMessage }}</div>
+    <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
   </div>
 </template>
 
@@ -37,13 +39,17 @@ export default {
       // Xử lý kết quả trả về ở đây
       if (response.status === 200) {
         this.successMessage = 'Đăng ký thành công'  
+       } else if (response.status === 400) {
+      throw new Error(response.data.error)
+
       } else {
         throw new Error('Đăng ký không thành công')
       }
     } catch (error) {
       // Xử lý lỗi ở đây
       console.log(error)
-      this.errorMessage = 'Đăng ký không thành công'
+      this.errorMessage = error.message
+
     }
   }
 }
@@ -85,5 +91,9 @@ input[type="text"] {
   background-color: #0069d9;
   border-color: #0062cc;
 }
-
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
 </style>

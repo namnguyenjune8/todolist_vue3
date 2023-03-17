@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+const User = require('../models/users'); 
 
 router.post('/signup', async (req, res) => {
     let user = await User.findOne({ user: req.body.user });
@@ -17,3 +18,4 @@ router.post('/signup', async (req, res) => {
     await user.save();
 });
 module.exports = router;
+
