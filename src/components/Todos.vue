@@ -1,6 +1,10 @@
 <template>
   <AddTodo  @add-todo="addTodo"/>
-  <TodoItem v-for="task in todos" :key="task._id" :todoProps="task" @itemcompleted="markComplete" 
+  <TodoItem v-for="task in todos" 
+  :key="task._id" 
+  :taskID="task.id" 
+  :todos="todos"
+  @itemcompleted="markComplete" 
   @deleteItem ="deleteTodo"/>
   <a href="/sign-in">Đăng xuất</a>
 </template>
@@ -19,25 +23,33 @@ export default {
     },
     setup() {
         const todos = ref([]);
-        axios.get('/http://localhost:3000/task')
+        axios.get('http://localhost:3000/task')
     .then(response => {
         todos.value = response.data;
     })
     .catch(error => {
         console.log(error);
     });
-    const markComplete = id => {
-        todos.value = todos.value.map(todo => {
-            if(todo.id === id) todo.completed =!todo.completed
-            return todo
-        })
+    const markComplete = (id) => {
+      todos.value = todos.value.map((todo) => {
+        if (todo.id === id) todo.completed = !todo.completed;
+        return todo;
+      });
     }
-    const deleteTodo = id => {
-        todos.value = todos.value.filter(todo => todo.id!== id)
-    }
-    const addTodo = newTodo => {
-        todos.value.push(newTodo)
-    }
+    const deleteTodo = (id) => {
+      todos.value = todos.value.filter((todo) => todo.id !== id);
+    };
+    const addTodo = async (newTodo) => {
+    try {
+        const response = await axios.post('http://localhost:3000/task', {
+            task: newTodo.title,
+            completed: newTodo.completed,
+    })
+            todos.value.push(response.data)
+    } catch (error) {
+        console.log(error)
+}
+}
         
     return {
     todos,

@@ -1,26 +1,31 @@
 <template>
-    <p :class="['todo-item', todoProps.completed ? 'is-completed': '']">
-        <input type="checkbox" :checked="todoProps.completed" @change="makeCompleted" />
-        {{ todoProps.title }}
+    <p :class="['todo-item', todo.completed ? 'is-completed': '']">
+        <input type="checkbox" :checked="todo.completed" @change="makeCompleted" />
+        {{ todo.task }}
         <button class="del-btn" @click="deleteItem">Delete</button>
     </p>
 </template>
 
 <script>
+import { computed } from 'vue'
 export default {
     name: 'TodoItem',
-    props: ['todoProps'],
+    props: ['taskId','todos'],
     setup(props,context) {
         const makeCompleted = () => {
-            context.emit('itemcompleted', props.todoProps.id)
+            context.emit('itemcompleted', props.taskId)
         }
         const deleteItem = () => {
-            context.emit('deleteItem', props.todoProps.id)
+            context.emit('deleteItem', props.taskId)
         }
-        
+        const todo = computed(() => {
+      return props.todos.find((todo) => todo.id === props.taskId);
+    });
+
     return {
         makeCompleted,
         deleteItem,
+        todo,
     }
 }
 }

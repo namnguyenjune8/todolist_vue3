@@ -7,24 +7,31 @@
 
 <script>
 import {ref} from 'vue'
-import {v4 as uuidv4} from 'uuid'
+import axios from 'axios'
+const baseURL = 'http://localhost:3000'
+
 export default {
     name: 'AddTodo',
     setup(props, context) {
         const title = ref('')
-        const check = () => {
-
-        } 
-        const addItem = event => {
-            event.preventDefault()
-
-            const newItem = {
-                id: uuidv4(),
-                title: title.value,
-                completed: false,
-            }
-            context.emit('addTodo', newItem)
-        }
+        
+        const addItem = async () => {
+      if (!title.value.trim()) return
+      try {
+        const response = await axios.post(`${baseURL}/tasks`, {
+          title: title.value,
+          completed: false
+        })
+        const newTodo = response.data
+        context.emit('addTodo', newTodo)
+        title.value = ''
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    const check = () => {
+      // Add any additional checks as needed
+    }
         return {
             title,
             check,
