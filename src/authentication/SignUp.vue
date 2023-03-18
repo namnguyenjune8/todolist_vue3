@@ -41,8 +41,8 @@ export default {
       // Xử lý kết quả trả về ở đây
       if (response.status === 200) {
         this.successMessage = 'Đăng ký thành công'  
-       } else if (response.status === 400) {
-      this.errorMessage = 'Đăng ký không thành công'
+      } else if (response.status === 400 && response.data.message === 'Username already exists') {
+          this.errorMessage = 'Tên đăng nhập đã được sử dụng, vui lòng chọn tên khác'
 
       } else {
         throw new Error('Đăng ký không thành công')
