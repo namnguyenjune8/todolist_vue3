@@ -7,11 +7,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 const signInRouter = require(__dirname + '/src/router/signIn');
 const signUpRouter = require(__dirname + '/src/router/userExisted');
+const taskRouter = require(__dirname + '/src/router/task');
 
 app.use(cors());
 app.use(express.json());
 app.use(signInRouter);
 app.use(signUpRouter);
+app.use(taskRouter);
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist')));

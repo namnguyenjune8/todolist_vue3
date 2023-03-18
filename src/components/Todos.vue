@@ -1,6 +1,6 @@
 <template>
   <AddTodo  @add-todo="addTodo"/>
-  <TodoItem v-for="todo in todos" :key="todo.id" :todoProps="todo" @itemcompleted="markComplete"
+  <TodoItem v-for="task in todos" :key="task._id" :todoProps="task" @itemcompleted="markComplete" 
   @deleteItem ="deleteTodo"/>
   <a href="/sign-in">Đăng xuất</a>
 </template>
@@ -8,29 +8,24 @@
 <script>
 import {ref} from 'vue'
 import TodoItem from './TodoItem'
-import {v4 as uuidv4} from 'uuid'
+
 import AddTodo from './AddTodo'
+import axios from 'axios';
 export default {
-    name: 'Todos',
-    components: { TodoItem, AddTodo},
+    name: 'task',
+    components: { 
+        TodoItem, 
+        AddTodo
+    },
     setup() {
-        const todos = ref([
-            {
-                id: uuidv4(),
-                title: 'Viec 1',
-                completed: true,
-            },
-            {
-                id: uuidv4(),
-                title: 'Viec 2',
-                completed: false,
-            },
-            {
-                id: uuidv4(),
-                title: 'Viec 3',
-                completed: false,
-            },
-        ])
+        const todos = ref([]);
+        axios.get('/http://localhost:3000/task')
+    .then(response => {
+        todos.value = response.data;
+    })
+    .catch(error => {
+        console.log(error);
+    });
     const markComplete = id => {
         todos.value = todos.value.map(todo => {
             if(todo.id === id) todo.completed =!todo.completed
@@ -45,11 +40,11 @@ export default {
     }
         
     return {
-        todos,
-        markComplete,
-        deleteTodo,
-        addTodo,
-    }
+    todos,
+    markComplete,
+    deleteTodo,
+    addTodo,
+}
     }
 
 }
