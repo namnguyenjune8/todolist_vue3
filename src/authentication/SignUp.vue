@@ -13,8 +13,8 @@
       <button type="submit"  class="btn btn-primary">Sign Up</button>
     </form>
     <a href="./sign-in">Đã có tài khoản?</a>
-    <div v-if="successMessage">{{ successMessage }}</div>
-    <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+    <div v-if="successMessage" class="success">{{ successMessage }}</div>
+    <div v-if="errorMessage" class="alert-danger">{{ errorMessage }}</div>
   </div>
 </template>
 
@@ -25,7 +25,9 @@ export default {
     return {
      
       user: '',
-      password: ''
+      password: '',
+      errorMessage: '',
+      successMessage: '',
     };
   },
   methods: {
@@ -40,7 +42,7 @@ export default {
       if (response.status === 200) {
         this.successMessage = 'Đăng ký thành công'  
        } else if (response.status === 400) {
-      throw new Error(response.data.error)
+      this.errorMessage = 'Đăng ký không thành công'
 
       } else {
         throw new Error('Đăng ký không thành công')
@@ -95,5 +97,8 @@ input[type="text"] {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+}
+.success {
+  color: green;
 }
 </style>

@@ -18,8 +18,9 @@
     </form>
     <a href="./sign-up">Đăng ký ngay!</a>
     <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
-    </div>
-    <div v-if="error" class="error">{{ error }}</div>
+    <div v-if="successMessage" class="success">{{ successMessage }}</div>
+  </div>
+
   </template>
 <script>
 import axios from 'axios'
@@ -27,7 +28,9 @@ export default {
   data() {
     return {
       user: '',
-      password: ''
+      password: '',
+      errorMessage: '',
+      successMessage: '',
     };
   },
   methods: {
@@ -40,8 +43,9 @@ export default {
     });
       // Xử lý kết quả trả về ở đây 
       if (response.status === 200 && response.data.accessToken) {
-      localStorage.setItem('accessToken', response.data.accessToken);
-      this.$router.push('/app');
+          localStorage.setItem('accessToken', response.data.accessToken);
+          this.successMessage = 'Đăng nhập thành công';
+          this.$router.push('/app');
     } else {
       throw new Error('Invalid login');
     }
@@ -105,4 +109,8 @@ input[type="text"] {
 .error {
   color: red; 
 }
+.success {
+  color: green;
+}
+
 </style>
