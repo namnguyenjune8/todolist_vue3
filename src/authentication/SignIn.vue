@@ -13,7 +13,7 @@
           Password:
         </label>
           <input type="password" class="form-control" v-model="password" required>
-    </div>
+    </div>  
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
     <a href="./sign-up">Đăng ký ngay!</a>
@@ -37,13 +37,14 @@ export default {
   async login() {
     // Gọi API đăng nhập và xử lý kết quả
     try {
+    
     const response = await axios.post('http://localhost:3000/signin', {
       user: this.user,
       password: this.password
     });
       // Xử lý kết quả trả về ở đây 
-      if (response.status === 200 && response.data.accessToken) {
-          localStorage.setItem('accessToken', response.data.accessToken);
+      if (response.status === 200 && response.data.token) {
+          localStorage.setItem('accessToken', response.data.token);
           this.successMessage = 'Đăng nhập thành công';
           this.$router.push('/app');
     } else {

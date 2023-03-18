@@ -2,6 +2,7 @@
   <AddTodo  @add-todo="addTodo"/>
   <TodoItem v-for="todo in todos" :key="todo.id" :todoProps="todo" @itemcompleted="markComplete"
   @deleteItem ="deleteTodo"/>
+  <a href="/sign-in">Đăng xuất</a>
 </template>
 
 <script>
