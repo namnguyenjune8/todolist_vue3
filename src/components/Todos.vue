@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <AddTodo  @add-todo="addTodo"/> -->
     <div class="todo-list">
       <TodoItem v-for="task in todos" 
         :key="task._id" 
@@ -17,14 +16,12 @@
 import {ref} from 'vue'
 import TodoItem from './TodoItem'
 
-// import AddTodo from './AddTodo'
 import axios from 'axios';
 
 export default {
     name: 'task',
     components: { 
         TodoItem, 
-        // AddTodo
     },
     setup() {
         const todos = ref([]);
@@ -41,31 +38,11 @@ export default {
         return todo;
       });
     }
-// //    const deleteTodo = async (id) => {
-//   try {
-//     await axios.delete(`http://localhost:3000/task/${id}`);
-//     todos.value = todos.value.filter((todo) => todo.id !== id);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-//     const addTodo = async (newTodo) => {
-//     try {
-//         const response = await axios.post('http://localhost:3000/task', {
-//             task: newTodo.title,
-//             completed: newTodo.completed,
-//     })
-//             todos.value.push(response.data)
-//     } catch (error) {
-//         console.log(error)
-// }
-// }
+
         
     return {
     todos,
     markComplete,
-    // deleteTodo,
-    // addTodo,
 }
     }
 
