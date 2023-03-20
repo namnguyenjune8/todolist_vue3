@@ -1,25 +1,30 @@
 <template>
-  <AddTodo  @add-todo="addTodo"/>
-  <TodoItem v-for="task in todos" 
-  :key="task._id" 
-  :taskID="task.id" 
-  :todos="todos"
-  @itemcompleted="markComplete" 
-  @deleteItem ="deleteTodo"/>
-  <a href="/sign-in">Đăng xuất</a>
+  <div>
+    <!-- <AddTodo  @add-todo="addTodo"/> -->
+    <div class="todo-list">
+      <TodoItem v-for="task in todos" 
+        :key="task._id" 
+        :taskID="task.id" 
+        :todos="todos"
+        @itemcompleted="markComplete" 
+        @deleteItem ="deleteTodo"/>
+    </div>
+    <a href="/sign-in">Đăng xuất</a>
+  </div>
 </template>
 
-<script>
+<script> 
 import {ref} from 'vue'
 import TodoItem from './TodoItem'
 
-import AddTodo from './AddTodo'
+// import AddTodo from './AddTodo'
 import axios from 'axios';
+
 export default {
     name: 'task',
     components: { 
         TodoItem, 
-        AddTodo
+        // AddTodo
     },
     setup() {
         const todos = ref([]);
@@ -36,26 +41,31 @@ export default {
         return todo;
       });
     }
-    const deleteTodo = (id) => {
-      todos.value = todos.value.filter((todo) => todo.id !== id);
-    };
-    const addTodo = async (newTodo) => {
-    try {
-        const response = await axios.post('http://localhost:3000/task', {
-            task: newTodo.title,
-            completed: newTodo.completed,
-    })
-            todos.value.push(response.data)
-    } catch (error) {
-        console.log(error)
-}
-}
+// //    const deleteTodo = async (id) => {
+//   try {
+//     await axios.delete(`http://localhost:3000/task/${id}`);
+//     todos.value = todos.value.filter((todo) => todo.id !== id);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+//     const addTodo = async (newTodo) => {
+//     try {
+//         const response = await axios.post('http://localhost:3000/task', {
+//             task: newTodo.title,
+//             completed: newTodo.completed,
+//     })
+//             todos.value.push(response.data)
+//     } catch (error) {
+//         console.log(error)
+// }
+// }
         
     return {
     todos,
     markComplete,
-    deleteTodo,
-    addTodo,
+    // deleteTodo,
+    // addTodo,
 }
     }
 
@@ -63,5 +73,9 @@ export default {
 </script>
 
 <style>
-
-</style>        
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+</style>
