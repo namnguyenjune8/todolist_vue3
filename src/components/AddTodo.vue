@@ -1,58 +1,55 @@
 <template>
-  <form @submit="addItem">
-  <input type="text" placeholder="New to do..." v-model="title" @input="check">
-  <input type="submit" value="Add" class="add-btn">
+  <form @submit.prevent="addTask">
+    <input type="text" placeholder="New to do..." v-model="task.title" @input="check" />
+    <input type="submit" value="Add" class="add-btn" />
   </form>
 </template>
 
 <script>
-import {ref} from 'vue'
-import axios from 'axios'
-const baseURL = 'http://localhost:3000'
-
+import axios from 'axios';
 export default {
-    name: 'AddTodo',
-    setup(props, context) {
-        const title = ref('')
-        
-        const addItem = async () => {
-      if (!title.value.trim()) return
-      try {
-        const response = await axios.post(`${baseURL}/tasks`, {
-          title: title.value,
-          completed: false
-        })
-        const newTodo = response.data
-        context.emit('addTodo', newTodo)
-        title.value = ''
-      } catch (error) {
-        console.log(error)
+  data() {
+    return {
+      task: {
+        title: ''
       }
     }
-    const check = () => {
-      // Add any additional checks as needed
+  },
+  methods: {
+    addTask() {
+      const token = localStorage.getItem('accessToken');
+      axios
+        .post('http://localhost:3000/addTask', this.task, { 
+          withCredentials: true,
+          headers: {
+        Authorization: `Bearer ${token}` 
+      } 
+        })
+        .then((response) => {
+          console.log(response);
+          this.$emit('add-todo', response.data); // gửi sự kiện add-todo với dữ liệu của công việc mới
+          this.task.title = ''; // reset giá trị của input
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    check() {
+      // do something
     }
-        return {
-            title,
-            check,
-            addItem,
-            
-        }
-        
-    }
+  }
 }
 </script>
 
 <style scoped>
-    form {
-        display: flex;
-    }
-    input[type='text'] {
-        flex: 10;
-        padding: 5px;
-
-    }
-    input[type='submit'] {
-        flex: 2;
-    }
+form {
+  display: flex;
+}
+input[type='text'] {
+  flex: 10;
+  padding: 5px;
+}
+input[type='submit'] {
+  flex: 2;
+}
 </style>

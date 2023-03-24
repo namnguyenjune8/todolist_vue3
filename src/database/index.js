@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const Task = require('../models/tasks');
+const User = require('../models/users');
 
 async function connect() {
     try {

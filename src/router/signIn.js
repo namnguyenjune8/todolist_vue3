@@ -48,7 +48,7 @@ router.post('/signin', (req, res) => {
                 }
                 if (isMatch) {
                     //Tạo 1 JWT token và trả về cho người dùng
-                    const payload = { user_id: foundUser._id };
+                    const payload = { id: foundUser._id };
                     jwt.sign(payload, secret, (err, token) => {
                         if (err) {
                             return res.status(500).json({ msg: 'Lỗi Server' });

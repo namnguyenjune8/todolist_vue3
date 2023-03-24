@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+
 const path = require('path');
 
 const database = require('./src/database');
@@ -9,13 +9,20 @@ const signInRouter = require(__dirname + '/src/router/signIn');
 const signUpRouter = require(__dirname + '/src/router/userExisted');
 const taskRouter = require(__dirname + '/src/router/task');
 
-app.use(cors());
 app.use(express.json());
 app.use(signInRouter);
 app.use(signUpRouter);
-app.use(taskRouter);
+app.use('/',taskRouter);
 
-app.use(cors());
+const cors = require('cors');
+const corsOptions = {
+  origin: 'http://localhost:8080',
+  credentials: 'include',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+app.use(cors(corsOptions));
+
 app.use(express.static(path.join(__dirname, 'dist')));
 
 //connect to db
