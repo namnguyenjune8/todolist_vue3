@@ -14,14 +14,6 @@ app.use(signInRouter);
 app.use(signUpRouter);
 app.use('/',taskRouter);
 
-const session = require('express-session');
-
-app.use(session({
-  secret: 'Aaaa0567828809',
-  resave: false,
-  saveUninitialized: true,
-}));
-
 const cors = require('cors');
 const corsOptions = {
   origin: 'http://localhost:8080',

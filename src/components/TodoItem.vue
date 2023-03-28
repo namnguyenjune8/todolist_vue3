@@ -1,56 +1,58 @@
 <template>
-    <p v-if="todo" :class="['todo-item', todo.completed ? 'is-completed': '']">
-      <input type="checkbox" :checked="todo && todo.completed" @change="makeCompleted" />
-      {{ todo.title }}
-      <button class="del-btn" @click="deleteItem">Delete</button>
-    </p>
-  </template>
-<script>
-import { computed } from 'vue'
-export default {
-  name: 'TodoItem', 
-  props: ['task', 'tasks'],
-  setup(props, context) {
-    const makeCompleted = () => {
-      context.emit('itemcompleted', props.taskId);
-    };
-    const deleteItem = () => {
-      context.emit('deleteItem', props.taskId);
-    };
-      const todo = computed(() => {
-  if (props.task && props.tasks) {
-    return props.tasks.find((task) => task._id === props.task._id);
-  }
-  return null;
-});
+  <div class="todo-item" :class="{ completed: task.completed }">
+    <input type="checkbox" @change="markCompleted" :checked="task.completed">
+    <span>{{ task.title }}</span>
+    <button @click="editItem">Sửa</button>
+    <button @click="deleteItem">Xóa</button>
+  </div>
+</template>
 
-    return {
-      makeCompleted,
-      deleteItem,
-      todo,
-    };
+<script>
+export default {
+  name: 'TodoItem',
+  props: ['task'],
+  methods: {
+    markCompleted() {
+      this.$emit('itemcompleted', this.task._id);
+    },
+    editItem() {
+      this.$emit('deleteItem', this.task._id);  
+    },
+    deleteItem() {
+      this.$emit('deleteItem', this.task._id);  
+    },
   },
 };
-
 </script>
 
 <style>
-.del-btn {
-    background: #ff0000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    float: right;
-    border-radius: 5px; 
+.completed {
+  text-decoration: line-through;
+  color: #ccc; /* màu chữ cho task đã hoàn thành */
 }
+
 .todo-item {
-    background: #f4f4f4;
-    padding: 10px;
-    margin: 0;
-    border-bottom: 1px#ccc dotted;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
-.is-completed {
-    text-decoration: line-through   ;
-    opacity: 0.5;
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
 }
 </style>
+
+
+
+
+
+

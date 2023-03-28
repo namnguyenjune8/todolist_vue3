@@ -6,7 +6,7 @@ const  { authenticateToken } = require('../middleware/authenticateToken');
 // Lấy tất cả các task
 router.get('/task', authenticateToken, async (req, res) => {
     try {
-    const tasks = await Task.find().populate('createdBy', 'user');
+      const tasks = await Task.find({ createdBy: req.query.createdBy })
     res.json(tasks);
     } catch (error) { 
     res.status(500).json({ message: error.message });
@@ -27,20 +27,23 @@ router.post('/addTask', authenticateToken, async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
-
-// Xóa task
-router.delete('/:id', authenticateToken, async (req, res) => {
+router.delete('/task/:id', authenticateToken, async (req, res) => {
   try {
-    const deletedTask = await Task.findByIdAndRemove(req.params.id);
-    if (deletedTask) {
-      res.json({ message: 'Task deleted' });
-    } else {
-      res.status(404).json({ message: 'Task not found' });
-    }
+    const deletedTask = await Task.findByIdAndDelete(req.params.id);
+    res.json(deletedTask);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 });
 
+// Xóa tất cả các task
+router.delete('/tasks', authenticateToken, async (req, res) => {
+  try {
+    const deletedTasks = await Task.deleteMany({ createdBy: req.query.createdBy });
+    res.json(deletedTasks);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 module.exports = router;

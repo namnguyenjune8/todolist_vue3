@@ -13,7 +13,15 @@ const routes = [
   {
     path: '/app',
     name: 'TodoApp',
-    component: TodoApp
+    component: TodoApp,
+    beforeEnter: (to, from, next) => {
+      const accessToken = localStorage.getItem('accessToken');
+      if (!accessToken) {
+        next('/sign-in');
+      } else {
+        next();
+      }
+    }
   },
   {
     path: '/sign-in',

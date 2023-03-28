@@ -1,28 +1,35 @@
 
-  <template>
-    <div>
-      <AddTodo @add-todo="addTodo"/>
-      <div class="todo-list">
-        <TodoItem
-          v-for="task in tasks"
-          :key="task._id"
-          :task="task"
-          @itemcompleted="markComplete"
-          @deleteItem="deleteTodo"
-          :todos="tasks"
-          :taskId="task._id"
-        />
-      </div>
-      <a href="/sign-in">Đăng xuất</a>
+<template>
+  <div>
+    <AddTodo v-on:add-todo="addTodo"/>
+    <div class="todo-list">
+      <TodoItem
+        v-for="task in tasks"
+        :key="task._id"
+        :task="task"
+        @itemcompleted="markComplete"
+        @deleteItem="deleteTodo"
+        :todos="tasks"
+        :taskId="task._id"
+      />
     </div>
-  </template>
+    
+    <div class="todo-buttons">
+    <button @click="markAllComplete" class="done-all-button">Done All Task</button>
+    <button @click="deleteAll" class="delete-all-button">Delete All Task</button>
+    <button @click="handleLogout" class="logout-button">Đăng xuất</button>
+  </div>
+
+  </div>
+</template>
+
 
   <script>
   import { ref, onMounted } from 'vue';
   import TodoItem from './TodoItem';
   import axios from 'axios';
   import AddTodo from './AddTodo'
-
+  
   export default {
     name: 'task',
     components: {
@@ -36,56 +43,143 @@
           if (task._id === id) task.completed = !task.completed;
           return task;
         });
-      };
-      
-  //     const deleteTodo = (id) => {
-  //     axios.delete(`/task/${id}`)
-  //         .then((response) => {
-  //             console.log(response);
-  //             axios.get('/task', { withCredentials: true })
-  //                 .then((response) => {
-  //                     tasks.value = response.data;
-  //                 })
-  //                 .catch((error) => {
-  //                     console.log(error);
-  //                 });
-  //         })
-  //         .catch((error) => {
-  //             console.log(error);
-  //         });
-  // };
+      };     
+   
+      const addTodo = (newTodo) => {
+          tasks.value.push(newTodo);
+        };  
+        
+        const deleteTodo = (id) => {
+            axios.delete(`/task/${id}`, { 
+              withCredentials: true,
+              headers: {
+                'Authorization': localStorage.getItem('accessToken'),
+                'Content-Type': 'application/json'
+              }
+            })
+            .then(() => {
+                tasks.value = tasks.value.filter((task) => task._id !== id);
+          });
+        };
 
-      onMounted(() => {
+        const deleteAll = () => {
+  axios.delete('/tasks', {
+    withCredentials: true,
+    headers: {
+      'Authorization': localStorage.getItem('accessToken'),
+      'Content-Type': 'application/json'
+    },
+    params: {
+      createdBy: localStorage.getItem('userId')
+    }
+  })
+  .then((response) => {
+    tasks.value = [];
+    console.log(response);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+};        
+
+   const markAllComplete = () => {
+      tasks.value.forEach(task => {
+        task.completed = true;
+      });
+      axios.put('/task', tasks.value, { 
+        withCredentials: true,
+        headers: {
+          'Authorization': localStorage.getItem('accessToken'),
+          'Content-Type': 'application/json'
+        }
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    };
+      
+  onMounted(() => {
         const token = localStorage.getItem('accessToken');
-        axios.get('http://localhost:3000/task', { 
+        const userId = localStorage.getItem('userId'); 
+        axios.get('/task', { 
           withCredentials: true,
           headers: {
-            Authorization:`${token}`
-          }
-        })
+            Authorization:`${token}`,
+            'Content-Type': 'application/json'
+          },
+          params: {
+                createdBy: userId
+              }
+            })  
           .then((response) => {
             tasks.value = response.data;
           })
           .catch((error) => {
             console.log(error);
           });
-     });
+      });
+
+      const handleLogout = () => {
+      localStorage.removeItem('accessToken');
+      localStorage.removeItem('userId');
+      window.location.href = '/sign-in';
+      };
 
       return {
         tasks,
         markComplete,
-        // deleteTodo,
-        
+        addTodo,
+        deleteTodo,
+        deleteAll,
+        markAllComplete,
+        handleLogout,
       };
     },
   };
   </script>
 
 
-    <style>
-    .todo-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    </style>
+<style>
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.done-all-button {
+  background-color: #2196F3;
+}
+
+.delete-all-button {
+  background-color: #f44336;
+}
+
+.logout-button {
+  background-color: #555;
+}
+.todo-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+</style>
