@@ -14,6 +14,14 @@ app.use(signInRouter);
 app.use(signUpRouter);
 app.use('/',taskRouter);
 
+const session = require('express-session');
+
+app.use(session({
+  secret: 'Aaaa0567828809',
+  resave: false,
+  saveUninitialized: true,
+}));
+
 const cors = require('cors');
 const corsOptions = {
   origin: 'http://localhost:8080',
@@ -22,6 +30,24 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization']
 };
 app.use(cors(corsOptions));
+app.use(function (req, res, next) {
+  // Set CORS headers
+  res.header("Access-Control-Allow-Origin", "http://localhost:8080");
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, Content-Length, X-Requested-With");
+
+  //intercepts OPTIONS method
+  if ('OPTIONS' === req.method) {
+    //respond with 200
+    res.sendStatus(200);
+  }
+  else {
+    //update the origin to match the domain of the Vue app
+    req.headers.origin = "http://localhost:8080";
+    //move on
+    next();
+  }
+});
 
 app.use(express.static(path.join(__dirname, 'dist')));
 

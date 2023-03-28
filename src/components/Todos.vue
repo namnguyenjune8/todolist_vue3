@@ -54,31 +54,28 @@
   //             console.log(error);
   //         });
   // };
-  const addTodo = (newTask) => {
-    axios.post('http://localhost:3000/addTask', newTask, { withCredentials: true })
-      .then((response) => {
-        console.log(response);
-        tasks.value.push(response.data); // thêm công việc mới vào danh sách
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+
       onMounted(() => {
-        axios.get('http://localhost:3000/task', { withCredentials: true })
+        const token = localStorage.getItem('accessToken');
+        axios.get('http://localhost:3000/task', { 
+          withCredentials: true,
+          headers: {
+            Authorization:`${token}`
+          }
+        })
           .then((response) => {
             tasks.value = response.data;
           })
           .catch((error) => {
             console.log(error);
           });
-      });
+     });
 
       return {
         tasks,
         markComplete,
         // deleteTodo,
-        addTodo,
+        
       };
     },
   };

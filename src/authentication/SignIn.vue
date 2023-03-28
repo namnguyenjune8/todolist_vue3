@@ -24,6 +24,7 @@
   </template>
 <script>
 import axios from 'axios'
+import jwt_decode from 'jwt-decode';
 export default {
   data() {
     return {
@@ -41,10 +42,17 @@ export default {
     const response = await axios.post('http://localhost:3000/signin', {
       user: this.user,
       password: this.password
+    
     });
       // Xử lý kết quả trả về ở đây 
       if (response.status === 200 && response.data.token) {
           localStorage.setItem('accessToken', response.data.token);
+
+           // Lưu user id vào localStorage
+            const tokenData = response.data.token.split(' ')[1]; // Lấy phần token của JWT
+            const decodedToken = jwt_decode(tokenData); // Giải mã token để lấy dữ liệu
+            localStorage.setItem('userId', decodedToken.id);
+
           this.successMessage = 'Đăng nhập thành công';
           this.$router.push('/app');
     } else {
@@ -66,11 +74,6 @@ export default {
 
 </script>
 <style scoped>
-/* .signin {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-} */
 .form-group {
   margin-bottom: 1rem;
   
