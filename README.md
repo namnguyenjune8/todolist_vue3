@@ -1,24 +1,7 @@
-# todolist_vuejs
+# todolist_vuejs, expressjs, nodejs, mongodb
 
 ## Project setup
 ```
-npm install
+npm install axios bcryptjs body-parser cors core-js dotenv jsonwebtoken jwt-decode mongoose passport passport-jwt vue 
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
