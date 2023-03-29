@@ -16,7 +16,7 @@
     </div>  
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
-    <a href="./sign-up">Đăng ký ngay!</a>
+    <a href="./sign-up">Sign Up now!</a>
     <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
     <div v-if="successMessage" class="success">{{ successMessage }}</div>
   </div>
@@ -53,7 +53,7 @@ export default {
             const decodedToken = jwt_decode(tokenData); // Giải mã token để lấy dữ liệu
             localStorage.setItem('userId', decodedToken.id);
 
-          this.successMessage = 'Đăng nhập thành công';
+          this.successMessage = 'Logged in successfully';
           this.$router.push('/app');
     } else {
       throw new Error('Invalid login');
@@ -61,7 +61,7 @@ export default {
     } catch (error) {
       // Xử lý lỗi ở đây
       console.log(error)
-      this.errorMessage = 'User hoặc password không chính xác'
+      this.errorMessage = 'User or password is incorrect'
     }
   }
 }

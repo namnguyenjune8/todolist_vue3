@@ -39,28 +39,28 @@ router.post('/signin', (req, res) => {
   User.findOne({ user: user }).exec()
     .then(foundUser => {
       if (!foundUser) {
-        return res.status(401).json({ msg: 'Không tìm thấy user' });
+        return res.status(401).json({ msg: 'User not found' });
       }
       bcrypt.compare(password, foundUser.password, (err, isMatch) => {
         if (err) {
-          return res.status(500).json({ msg: 'Lỗi Server' });
+          return res.status(500).json({ msg: 'Server Error' });
         }
         if (isMatch) {
           // Tạo 1 JWT token và trả về cho người dùng
           const payload = { id: foundUser._id };
           jwt.sign(payload, secret, (err, token) => {
             if (err) {
-              return res.status(500).json({ msg: 'Lỗi Server' });
+              return res.status(500).json({ msg: 'Server Error' });
             }
             return res.status(200).json({ token: `Bearer ${token}` });
           });
         } else {
-          return res.status(401).json({ msg: 'Sai mật khẩu' });
+          return res.status(401).json({ msg: 'Wrong password' });
         }
       });
     })
     .catch(err => {
-      return res.status(500).json({ msg: 'Lỗi Server' });
+      return res.status(500).json({ msg: 'Server Error' });
     });
 });
 

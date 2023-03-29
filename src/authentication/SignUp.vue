@@ -12,7 +12,7 @@
     </div>
       <button type="submit"  class="btn btn-primary">Sign Up</button>
     </form>
-    <a href="./sign-in">Đã có tài khoản?</a>
+    <a href="./sign-in">Already have an account?</a>
     <div v-if="successMessage" class="success">{{ successMessage }}</div>
     <div v-if="errorMessage" class="alert-danger">{{ errorMessage }}</div>
   </div>
@@ -40,12 +40,12 @@ export default {
       })
       // Xử lý kết quả trả về ở đây
       if (response.status === 200) {
-        this.successMessage = 'Đăng ký thành công'  
+        this.successMessage = 'Sign Up Success'  
       } else if (response.status === 400 && response.data.message === 'Username already exists') {
-          this.errorMessage = 'Tên đăng nhập đã được sử dụng, vui lòng chọn tên khác'
+          this.errorMessage = 'Username already used, please choose another name'
 
       } else {
-        throw new Error('Đăng ký không thành công')
+        throw new Error('Registration failed')
       }
     } catch (error) {
       // Xử lý lỗi ở đây

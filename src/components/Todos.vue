@@ -48,11 +48,11 @@
           return task;
         });
       };     
-   
+   //Xử lý thêm task mới
       const addTodo = (newTodo) => {
           tasks.value.push(newTodo);
         };  
-        
+      //Xử lý delete 1 task
         const deleteTodo = (id) => {
             axios.delete(`/task/${id}`, { 
               withCredentials: true,
@@ -65,27 +65,27 @@
                 tasks.value = tasks.value.filter((task) => task._id !== id);
           });
         };
-
-        const deleteAll = () => {
-  axios.delete('/tasks', {
-    withCredentials: true,
-    headers: {
-      'Authorization': localStorage.getItem('accessToken'),
-      'Content-Type': 'application/json'
-    },
-    params: {
-      createdBy: localStorage.getItem('userId')
-    }
-  })
-  .then((response) => {
-    tasks.value = [];
-    console.log(response);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-};        
-
+        //Xử lý delete toàn bộ task của user
+       const deleteAll = () => {
+          axios.delete('/tasks', {
+            withCredentials: true,
+            headers: {
+              'Authorization': localStorage.getItem('accessToken'),
+              'Content-Type': 'application/json'
+            },
+            params: {
+              createdBy: localStorage.getItem('userId')
+            }
+          })
+          .then((response) => {
+            tasks.value = [];
+            console.log(response);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+        };        
+// Xử lý check completed toàn bộ task
    const markAllComplete = () => {
       tasks.value.forEach(task => {
         task.completed = true;
@@ -104,7 +104,7 @@
         console.log(error);
       });
     };
-
+// Xử lý lưu lại dữ liệu khi bấm vô nút save 
     const saveEdit = (editedTask) => {
       axios.put(`/task/${editedTask._id}`, editedTask, {
         withCredentials: true,
@@ -124,7 +124,7 @@
         });
     };
     
-      
+      //lọc lại dữ liệu sau khi thao tác và trả ra giao diện
   onMounted(() => {
         const token = localStorage.getItem('accessToken');
         const userId = localStorage.getItem('userId'); 
@@ -145,7 +145,7 @@
             console.log(error);
           });
       });
-
+// Xử lý log out
       const handleLogout = () => {
       localStorage.removeItem('accessToken');
       localStorage.removeItem('userId');
