@@ -2,6 +2,6 @@
 
 ## Project setup
 ```
-npm install axios bcryptjs body-parser cors core-js dotenv jsonwebtoken jwt-decode mongoose passport passport-jwt vue 
+npm install axios express bcryptjs body-parser cors core-js dotenv jsonwebtoken jwt-decode mongoose passport passport-jwt vue vue-router
 ```
 
