@@ -9,15 +9,17 @@
         :task="task"
         @itemcompleted="markComplete"
         @deleteItem="deleteTodo"
+        @saveitem="saveEdit"
         :todos="tasks"
         :taskId="task._id"
+        :editingTask="editingTask"
       />
     </div>
     
     <div class="todo-buttons">
     <button @click="markAllComplete" class="done-all-button">Done All Task</button>
     <button @click="deleteAll" class="delete-all-button">Delete All Task</button>
-    <button @click="handleLogout" class="logout-button">Đăng xuất</button>
+    <button @click="handleLogout" class="logout-button">Log Out</button>
   </div>
 
   </div>
@@ -38,6 +40,8 @@
     },
     setup() {
       const tasks = ref([]);
+      let editingTask = null;
+      //check task completed
       const markComplete = (id) => {
         tasks.value = tasks.value.map((task) => {
           if (task._id === id) task.completed = !task.completed;
@@ -100,6 +104,26 @@
         console.log(error);
       });
     };
+
+    const saveEdit = (editedTask) => {
+      axios.put(`/task/${editedTask._id}`, editedTask, {
+        withCredentials: true,
+        headers: {
+          'Authorization': localStorage.getItem('accessToken'),
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((response) => {
+          const updatedTask = response.data;
+          const taskIndex = tasks.value.findIndex((task) => task._id === updatedTask._id);
+          tasks.value.splice(taskIndex, 1, updatedTask);
+          editingTask = null;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+    
       
   onMounted(() => {
         const token = localStorage.getItem('accessToken');
@@ -136,6 +160,8 @@
         deleteAll,
         markAllComplete,
         handleLogout,
+        saveEdit,
+        editingTask,
       };
     },
   };

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="signup">
     <h1>Sign Up</h1>
     <form @submit.prevent="signup">
       <div>
@@ -58,6 +58,14 @@ export default {
 };
 </script>
 <style>
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 .form-group {
   margin-bottom: 1rem;
 }
@@ -86,6 +94,7 @@ input[type="text"] {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  margin-top: 10px;
 }
 
 .btn-primary:hover {

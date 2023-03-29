@@ -46,4 +46,16 @@ router.delete('/tasks', authenticateToken, async (req, res) => {
   }
 });
 
+// Cập nhật task
+router.put('/task/:id', authenticateToken, async (req, res) => {
+  try {
+    const id = req.params.id;
+    const task = await Task.findByIdAndUpdate(id, req.body, { new: true });
+    res.send(task);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).send('Server error');
+  }
+});
+
 module.exports = router;

@@ -74,11 +74,24 @@ export default {
 
 </script>
 <style scoped>
+.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 .form-group {
   margin-bottom: 1rem;
   
 }
 
+button[type="submit"] {
+  margin-top: 10px;
+  align-self: center;
+}
 
 label {
   font-weight: bold;

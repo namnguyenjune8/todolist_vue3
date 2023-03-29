@@ -16,6 +16,7 @@ router.post('/signup', async (req, res) => {
     user.password = await bcrypt.hash(user.password, salt);
 
     await user.save();
+    return res.status(200).json({ message: 'Đăng ký thành công!' });
 });
 module.exports = router;
 
