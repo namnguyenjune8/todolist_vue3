@@ -1,20 +1,16 @@
 <template>
     <div class="signin">
       <h1>Login</h1>
-      <form @submit.prevent="login" >
+      <form class="form-login" @submit.prevent="login" >
         <div class="form-group">
-        <label for="user">
-          User:
-        </label>
+        <label for="user">User:</label>
           <input type="text" v-model="user"  class="form-control" required>
     </div>
     <div class="form-group">
-        <label>
-          Password:
-        </label>
+        <label>Password:</label>
           <input type="password" class="form-control" v-model="password" required>
     </div>  
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button class="login-button">Login</button>
     </form>
     <a href="./sign-up">Sign Up now!</a>
     <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
@@ -54,7 +50,7 @@ export default {
             localStorage.setItem('userId', decodedToken.id);
 
           this.successMessage = 'Logged in successfully';
-          this.$router.push('/app');
+          this.$router.push('/');
     } else {
       throw new Error('Invalid login');
     }
@@ -67,67 +63,8 @@ export default {
 }
 }
 
-
-
-
-  
-
 </script>
-<style scoped>
-.signin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
+<style scoped lang="scss">
 
-.form-group {
-  margin-bottom: 1rem;
-  
-}
-
-button[type="submit"] {
-  margin-top: 10px;
-  align-self: center;
-}
-
-label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-input[type="password"],
-input[type="text"] {
-  display: block;
-  width: 200px;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #495057;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-.error {
-  color: red; 
-}
-.success {
-  color: green;
-}
 
 </style>

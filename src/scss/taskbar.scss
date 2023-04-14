@@ -1,0 +1,142 @@
+.task-container {
+    grid-area: task;
+    position: absolute;
+    top: 50px;
+    width: 18%;
+  }
+  
+  .task-list {
+    list-style: none;
+    margin: 0;
+    padding: 1px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .task-item {
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 8px;
+    font-size: 16 px;
+    // margin: 5px;
+  }
+  .task-item:hover {
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+  }
+  .task-item i {
+    padding-left: 0px;
+    padding-right: 6px;
+  }
+  .favorites-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .favorites-title {
+  margin-right: 5px;
+  align-items: center;
+  display: flex;
+  }
+  .favorites-header .favorites-title {
+  font-weight: bold;
+  font-family: "Arial", sans-serif; 
+  }
+  
+  .toggle-arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  }
+  
+  .fa-angle-down {
+  transform: rotate(360deg);
+  }
+  
+  .favorites-list {
+  margin-left: -40px;
+    margin-top: -5px;
+    list-style: none;
+  
+  }
+  .tag_calendar i{
+  padding-right: 0px;
+  margin-right: 4px;
+  }
+  .project-list{
+  margin-left: -20px;
+    margin-top: -5px;
+    list-style: none;
+  }
+  .personal-icon{
+  font-size: 10px;
+  padding-right: 6px;
+  }
+  .work-icon{
+  padding-right: 6px;
+  }
+  .tag-count {
+    float: right;
+    margin-right: 10px;
+    opacity: 0.8;
+  }
+  .active {
+    background-color: #d8e9dc;
+    color: #000;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+
+  //mobile devices
+  @media only screen and (max-width: 768px) {
+    .task-container {
+      width: 80%;
+    }
+    
+    .task-list {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    
+    .toggle-arrow {
+      display: none;
+    }
+    
+    .favorites-title {
+      font-size: 14px;
+    }
+    
+    .favorites-list {
+      margin-left: 0;
+    }
+    
+    .project-list {
+      margin-left: 0;
+    }
+    
+    .personal-icon {
+      display: none;
+    }
+    
+    .work-icon {
+      display: none;
+    }
+    
+
+  }
+
+  
+//tablet devices
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+
+}

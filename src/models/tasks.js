@@ -14,7 +14,16 @@
        },
       createdBy: {
          type: mongoose.Schema.Types.ObjectId,
-          ref: 'User' }
+          ref: 'User' 
+       },
+       tag: {
+         type: String,
+         required: true,
+      },
+      subtag: {
+        type: String,
+        required: true,
+      },
     });
     module.exports = mongoose.model('Task', taskSchema);  
     

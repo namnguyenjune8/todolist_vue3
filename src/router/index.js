@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '@/components/MainPage.vue'
-import TodoApp from '@/components/TodoApp.vue'
+// import TodoApp from '@/components/TodoApp.vue'
 import SignIn from '@/authentication/SignIn.vue'
 import SignUp from '@/authentication/SignUp.vue'
 
@@ -10,19 +10,19 @@ const routes = [
     name: 'MainPage',
     component: MainPage
   },
-  {
-    path: '/app',
-    name: 'TodoApp',
-    component: TodoApp,
-    beforeEnter: (to, from, next) => {
-      const accessToken = localStorage.getItem('accessToken');
-      if (!accessToken) {
-        next('/sign-in');
-      } else {
-        next();
-      }
-    }
-  },
+  // {
+  //   path: '/app',
+  //   name: 'TodoApp',
+  //   component: TodoApp,
+  //   beforeEnter: (to, from, next) => {
+  //     const accessToken = localStorage.getItem('accessToken');
+  //     if (!accessToken) {
+  //       next('/sign-in');
+  //     } else {
+  //       next();
+  //     }
+  //   }
+  // },
   {
     path: '/sign-in',
     name: 'SignIn',

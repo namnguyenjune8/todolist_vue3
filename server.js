@@ -2,9 +2,9 @@ const express = require('express');
 
 const path = require('path');
 
-const database = require('./src/database');
 const app = express();
 const port = process.env.PORT || 3000;
+const database = require('./src/database');
 const signInRouter = require(__dirname + '/src/router/signIn');
 const signUpRouter = require(__dirname + '/src/router/userExisted');
 const taskRouter = require(__dirname + '/src/router/task');

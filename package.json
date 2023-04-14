@@ -23,7 +23,8 @@
     "mongoose": "^7.0.1",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -35,6 +36,8 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "express": "^4.18.2",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.2",
     "vue-router": "^4.1.6"
   },
   "eslintConfig": {

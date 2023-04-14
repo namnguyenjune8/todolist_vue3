@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <p>TO DO LIST</p>
+    <p>Today</p>
   </div>
 </template>
 
@@ -12,8 +12,7 @@ export default {
 
 <style>
 .header {
-    text-align: center;
-    background-color: #f4f4f4;
-    font-size: 50px;
+  font-weight: bold;
+    font-size: 20px;
 }
 </style>
