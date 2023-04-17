@@ -6,7 +6,8 @@
     
 
     />
-    <i class="fa-solid fa-bars menu" @click="toggleSidebar"  style="color: #ffffff;"></i>
+    <i v-if="!menuOpen" class="fa-solid fa-bars menu" @click="toggleSidebar"  style="color: #ffffff;"></i>
+    <i v-else class="fa-solid fa-times menu" @click="toggleSidebar"  style="color: #ffffff;"></i>
     <i class="fa-solid fa-house menu" style="color: #ffffff;"></i>
     <i class="fa fa-search search-icon"  @click="toggleSearchbar"></i>
     <div class="search-container" :class="{ show: searchActive }">
@@ -23,6 +24,7 @@
     <div class="avatar" v-if="isLoggedIn" @click="toggleMenu">
       <img :src="avatarUrl" alt="Avatar" class="avatar-image">
     </div>  
+ 
     <User v-if="showUserMenu"></User>
     <a href="/sign-in" v-if="!isLoggedIn" class="login-button">Log in</a>
     <a href="/sign-up" v-if="!isLoggedIn" class="signup-button">Sign Up</a>
@@ -61,6 +63,7 @@ export default {
     },
     toggleSidebar() {
       this.sidebarOpen = !this.sidebarOpen;
+      this.menuOpen = !this.menuOpen;
     },
     toggleSearchbar() {
     this.searchActive = !this.searchActive;

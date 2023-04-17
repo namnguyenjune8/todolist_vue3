@@ -93,7 +93,7 @@
   }
 
   //mobile devices
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .todoApp {
       position: absolute;
       top: 8%;
@@ -111,11 +111,11 @@
   }
   .icons {
     display: flex;
-    margin-left: -38%;
-    font-size: -5px;
+    margin-left: -27%;
+    
 }
 .avatar {
-  width: 30%;
+  width: 10%;
   height: 70%;
   border-radius: 50%;
   overflow: hidden;
@@ -126,7 +126,7 @@
     right: 51%;
     position: relative;
     transition: top .3s ease-in-out;
-    z-index: 9999999;
+    z-index: 9999;
 }
 .search-container.show {
   transform: translateY(0%);
@@ -152,7 +152,7 @@
   top: -1%;
   height: 16px;
   line-height: 1.25;
-  padding: 4% 42%;
+  padding: 4% 56%;
   color: #fdfdfd;
   background-color: #e36f6f;
   background-image: none;
@@ -170,11 +170,26 @@
     color: #fff;
     padding: 30px;
   }
+  .search-container .fa-search {
+    left: 52px;
   }
+
+  }
+
 
   
 //tablet devices
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.todoApp {
+  width: 85%;
+  top: 6%;
+  left: 6%;
+  right: 0;
+}
+.sidebar {
+  top: 5%;
+}
+.avatar {
+  width: 5%;
+}
 }
