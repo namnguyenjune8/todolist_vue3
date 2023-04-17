@@ -3,6 +3,7 @@
     position: absolute;
     top: 50px;
     width: 18%;
+    
   }
   
   .task-list {
@@ -98,41 +99,27 @@
 
   //mobile devices
   @media only screen and (max-width: 768px) {
-    .task-container {
-      width: 80%;
+    .sidebar {
+      position: fixed;
+      top: 7.5%;;
+      left: -124%;
+      bottom: 0;
+      width: 60%;
+      z-index: 99999;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,.3);
+      transition: left .3s ease-in-out;
     }
     
-    .task-list {
-      margin-left: 0;
-      margin-top: 0;
-    }
-    
-    .toggle-arrow {
-      display: none;
-    }
-    
-    .favorites-title {
-      font-size: 14px;
-    }
-    
-    .favorites-list {
-      margin-left: 0;
-    }
-    
-    .project-list {
-      margin-left: 0;
-    }
-    
-    .personal-icon {
-      display: none;
-    }
-    
-    .work-icon {
-      display: none;
+    .sidebar.show {
+      transform: translateX(0%);
+      left: -1%;
     }
     
 
-  }
+  }  
+ 
 
   
 //tablet devices

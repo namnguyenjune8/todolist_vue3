@@ -2,15 +2,16 @@
   <div class="headerbar">
     <Task
     @task-selected="setActiveTask"
-    />
-   
-      
+    :class="{ show: sidebarOpen}"
     
-    <i class="fa-solid fa-bars menu" @click="toggleSidebar" style="color: #ffffff;"></i>
+
+    />
+    <i class="fa-solid fa-bars menu" @click="toggleSidebar"  style="color: #ffffff;"></i>
     <i class="fa-solid fa-house menu" style="color: #ffffff;"></i>
-    <div class="search-container">
-      <input type="text" class="searchbar" placeholder="Search..."> 
-      <i class="fa fa-search"></i>
+    <i class="fa fa-search search-icon"  @click="toggleSearchbar"></i>
+    <div class="search-container" :class="{ show: searchActive }">
+      <input type="text" class="searchbar"  placeholder="Search..."> 
+      <i class="fa fa-search"  @click="toggleSearchbar"></i>
     </div>
     
     <div class="icons">
@@ -21,18 +22,17 @@
 
     <div class="avatar" v-if="isLoggedIn" @click="toggleMenu">
       <img :src="avatarUrl" alt="Avatar" class="avatar-image">
-    </div>
+    </div>  
     <User v-if="showUserMenu"></User>
     <a href="/sign-in" v-if="!isLoggedIn" class="login-button">Log in</a>
     <a href="/sign-up" v-if="!isLoggedIn" class="signup-button">Sign Up</a>
-    <SideBar v-if="showSidebar" @close="toggleSidebar" />
  </div>
  <!-- show Todo App on Today -->
-      <div v-if="activeTask === 'today'" class="todoApp">
+      <div v-if="activeTask === 'today'" class="todoApp" :class="{ show: searchActive }">
       <TodoApp />
     </div>
  <!--   Show Inbox App on 'inbox'  -->
-     <div v-if="activeTask === 'inbox'" class="todoApp">
+     <div v-if="activeTask === 'inbox'" class="todoApp" :class="{ show: searchActive }">
       <InboxApp />
     </div> 
     
@@ -43,13 +43,11 @@
 import jwt_decode from 'jwt-decode'
 import User from './User.vue';
 import Task from './Task.vue';
-import SideBar from './Sidebar.vue';
 import TodoApp from './TodoApp.vue';
-import InboxApp from './Inbox.vue';
+import InboxApp from './Inbox.vue'; 
 export default {
   components: {
     User,
-    SideBar,
     Task,
     TodoApp,
     InboxApp,
@@ -58,23 +56,32 @@ export default {
     toggleMenu() {
     this.showUserMenu = !this.showUserMenu;
     },
-    toggleSidebar() {
-      this.showSidebar = !this.showSidebar;
-    },
     setActiveTask(task) {
       this.activeTask = task;
     },
+    toggleSidebar() {
+      this.sidebarOpen = !this.sidebarOpen;
+    },
+    toggleSearchbar() {
+    this.searchActive = !this.searchActive;
+  },
    
   },
-
+  props: {
+  isMenuOpen: {
+    type: Boolean,
+    default: false
+  }
+},
   name: 'MainPage',
   data() {
     return {
       isLoggedIn: false,
       avatarUrl: '',
       showUserMenu: false,
-      showSidebar: false,
       activeTask: 'today',
+      sidebarOpen: false,
+      searchActive: false,
   
     };
   },

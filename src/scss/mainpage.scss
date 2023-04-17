@@ -53,7 +53,9 @@
     cursor: pointer;
     color: #fff;
   }
-  
+  .search-icon {
+    display: none;
+  }
   .icons {
     display: flex;
     margin-left: auto; 
@@ -66,8 +68,8 @@
   }
   
     .avatar {
-    width: 36px;
-    height: 36px;
+    width: 3%;
+    height: 70%;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 24px;
@@ -92,8 +94,82 @@
 
   //mobile devices
   @media only screen and (max-width: 768px) {
+    .todoApp {
+      position: absolute;
+      top: 8%;
+      left: 2%;
+      right: 2%;
+      bottom: 0;
+      background-color: #fff;
+      overflow-y: auto;
+      
+  }.todoApp.show {
+    top: 11%;
+  }
+  .header {
+    text-align: center;
+  }
+  .icons {
+    display: flex;
+    margin-left: -38%;
+    font-size: -5px;
+}
+.avatar {
+  width: 30%;
+  height: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+  .search-container {
+    top: -100%;
+    right: 51%;
+    position: relative;
+    transition: top .3s ease-in-out;
+    z-index: 9999999;
+}
+.search-container.show {
+  transform: translateY(0%);
+  top: 82%; 
+}
+//   .searchbar {
+//     display: block;
+//     width: 100%;
+//     font-size: 1rem;
+//     top: -1%;
+//     height: 16px;
+//     line-height: 1.25;
+//     color: #fdfdfd;
+//     background-color: #e36f6f;
+//     background-image: none;
+//     border-radius: 0.25rem;
+//     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+// }
+.searchbar {
+  display: block;
+  width: inherit;
+  font-size: 1rem;
+  top: -1%;
+  height: 16px;
+  line-height: 1.25;
+  padding: 4% 42%;
+  color: #fdfdfd;
+  background-color: #e36f6f;
+  background-image: none;
+  border-radius: 0.25rem;
+  text-align: center;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &::placeholder {
+    color: #fff;
+    opacity: 1;
 
-
+  }
+}
+  .search-icon {
+    display: block;
+    color: #fff;
+    padding: 30px;
+  }
   }
 
   

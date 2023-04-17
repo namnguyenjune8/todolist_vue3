@@ -1,0 +1,21 @@
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  .task-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+  }
+  
+  .icon_tag {
+    margin-right: 10px;
+  }
+    //mobile devices
+    @media only screen and (max-width: 768px) {
+        .task-tag {
+            display: none;
+        }
+    }

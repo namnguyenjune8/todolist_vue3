@@ -173,19 +173,5 @@ export default {
 
 
 <style lang="scss">
-.completed {
-  text-decoration: line-through;
-  color: #ccc;
-}
 
-.task-tag{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  
-}
-
-.icon_tag {
-  margin-right: 10px;
-}
 </style>

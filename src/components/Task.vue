@@ -1,5 +1,5 @@
 <template>
-  <div class="task-container">
+  <div class="task-container sidebar" >
     <ul class="task-list">
       <li class="task-item" 
       :class="{ active: activeTask === 'inbox' }" @click=" setActiveTask('inbox')"
@@ -127,6 +127,7 @@
 </template>
 <script>
 import { mapState } from 'vuex';
+
 export default {
   props: {
     tasks: {
@@ -134,6 +135,7 @@ export default {
       required: true
     },
   },  
+  
   computed: {
     ...mapState({
       totalTasks: state => state.totalTasks,
@@ -155,9 +157,9 @@ data() {
     showPersonal: false,
     showWork: false,
     activeTask: 'today',
+  
   }
 },
-
 
 
   methods: {
@@ -176,7 +178,7 @@ data() {
   setActiveTask(task) {
       this.activeTask = task;
       this.$emit('task-selected', task);
-    },
+  },
   
 },
 }
