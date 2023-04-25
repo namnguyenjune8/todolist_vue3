@@ -24,6 +24,10 @@
         type: String,
         required: true,
       },
+      dateActive: {
+        type: Date,
+        required: true,
+      }
     });
     module.exports = mongoose.model('Task', taskSchema);  
     

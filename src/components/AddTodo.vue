@@ -23,6 +23,11 @@
             <option value="Client - Email design">Client - Email design</option>
             <option value="Client - Rebrand">Client - Rebrand</option>
           </select>
+          <div>
+              <label>Select date:</label>
+              <datepicker v-model="task.dateActive" format="dd/MM/yyyy"></datepicker>
+             
+          </div>
           <button class="button_add">Add Task</button>
           <button class="button_cancel" @click="showModal = false">Cancel</button>
         </form>
@@ -33,15 +38,22 @@
 
 <script>
 import axios from "axios";
+import Datepicker from 'vue3-datepicker';
+import 'vue3-datepicker/dist/vue3-datepicker.css';
 
 export default {
+  components: {
+    Datepicker,
+  },
   data() {
     return {
+      // selectedDate: null,
       showModal: false,
       task: {
         title: "",
         tag: "",
         subtag: "",
+        dateActive: null,
       },
     };
   },
@@ -52,6 +64,7 @@ export default {
       console.log("Task:", this.task);
       console.log("Token:", token);
       console.log(userId);
+      console.log("Date Active:", this.task.dateActive);
       axios
         .post(
           "http://localhost:3000/addTask",
@@ -60,6 +73,7 @@ export default {
             tag: this.task.tag,
             subtag: this.task.subtag,
             createdBy: userId,
+            dateActive: this.task.dateActive,
           },
           {
             withCredentials: true,
@@ -74,6 +88,7 @@ export default {
           this.task.title = "";
           this.task.tag = "";
           this.task.subtag = "";
+          this.task.dateActive = "";
           this.showModal = false;
         })
         .catch((error) => {

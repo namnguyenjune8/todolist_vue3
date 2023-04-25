@@ -3,6 +3,7 @@
     <div class="todo-item" @click="showModal = true" :class="{ completed: task.completed }">
       <input type="checkbox" class="todo-item-checkbox" @change="markCompleted" :checked="task.completed"  @click.stop>
       <span class="todo-item-title">{{ task.title }}</span>
+      <span>{{ task.dateActive }}</span>
       <div class="task-tag">
         <span class="todo-item-title" v-html="getIconClass(task.tag) + task.tag"></span>
         <div class="todo-item-title">
@@ -20,6 +21,8 @@
         <h2 class="modal_title">Task Information</h2>
         <label for="task-title">Task Title:</label>
         <input class="modal_input" id="task-title" v-model="title" :readonly="!isEditing">
+        <label for="task-title">Task Date:</label>
+        <input class="modal_input" id="task-dateActive" v-model="dateActive" :readonly="!isEditing">
         <template v-if="!isEditing"> 
           <label for="task-tag">Tag:</label>
           <span class="modal_span"> {{ tag }}</span>
@@ -80,6 +83,7 @@ export default {
       isEditing: false,
       showModal: false,
       title: this.task.title,
+      dateActive: this.task.dateActive,
       taskData: this.task,
       tag: this.task.tag,
       subtag: this.task.subtag,
@@ -144,6 +148,7 @@ export default {
           title: this.title.trim(),
           tag: this.tag.trim(),
           subtag: this.subtag.trim(),
+          dayActive: this.dateActive.trim(),
         };
         this.$emit('saveitem', newItem);
         this.isEditing = false;

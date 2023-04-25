@@ -21,6 +21,7 @@ router.post('/addTask', authenticateToken, async (req, res) => {
     tag: req.body.tag,
     subtag: req.body.subtag,
     createdBy: req.body.createdBy,
+    dateActive: req.body.dateActive,
   });
   try {
     const newTask = await task.save();

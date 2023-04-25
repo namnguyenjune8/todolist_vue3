@@ -12,7 +12,7 @@
     <i class="fa fa-search search-icon"  @click="toggleSearchbar"></i>
     <div class="search-container" :class="{ show: searchActive }">
       <input type="text" class="searchbar"  placeholder="Search..."> 
-      <i class="fa fa-search"  @click="toggleSearchbar"></i>
+      <i class="fa fa-search"  @click="toggleSearchbar"></i>  
     </div>
     
     <div class="icons">

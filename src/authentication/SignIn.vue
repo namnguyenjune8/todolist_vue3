@@ -50,7 +50,7 @@ export default {
             localStorage.setItem('userId', decodedToken.id);
 
           this.successMessage = 'Logged in successfully';
-          this.$router.push('/');
+          this.$router.push('/main');
     } else {
       throw new Error('Invalid login');
     }

@@ -1,0 +1,10 @@
+    $card-background-idle: #fff;
+    $card-background-onhover: #fff;
+    $card-border-idle: rgba(42,29,48,.16);
+    $card-border-onhover: rgba(42,29,48,.24);
+    $card-border-radius: var($border-radius-lg);
+    $card-active-transform: scale(0.98);
+    $card-active-transition: transform var($animation-ease-base) var($animation-duration-150);
+    $shadow-card-idle: 0px 1px 0 rgba(42,29,48,.03);
+    $shadow-card-hover: 0px 1px 4px -1px rgba(42,29,48,.09),0px 1px 1px rgba(42,29,48,.03);
+    

@@ -1,12 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from '@/components/HomePage.vue'
 import MainPage from '@/components/MainPage.vue'
 // import TodoApp from '@/components/TodoApp.vue'
 import SignIn from '@/authentication/SignIn.vue'
 import SignUp from '@/authentication/SignUp.vue'
 
+
 const routes = [
   {
-    path: '/',
+    path: '/' ,
+    name: 'HomePage',
+    component: HomePage
+  },
+  {
+    path: '/main' ,
     name: 'MainPage',
     component: MainPage
   },
@@ -23,6 +30,7 @@ const routes = [
   //     }
   //   }
   // },
+
   {
     path: '/sign-in',
     name: 'SignIn',
