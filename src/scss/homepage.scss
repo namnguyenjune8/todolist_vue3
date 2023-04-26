@@ -5,16 +5,20 @@ $coef: 0.93;
 $base-max-width: 27rem; // giá trị mặc định
 $sm-max-width: 27rem; // giá trị mặc định
 $xs-max-width: 27rem; // giá trị mặc định
-
+$justify: space-around;
+$cta-background: $color-td-secondary-light;
 @media screen and (min-width: 768px) {
   $base-max-width: 45rem;
   $sm-max-width: 45rem;
   $xs-max-width: 40.625rem;
+  $justify: space-between;
+  
 }
 
 @media screen and (min-width: 960px) {
   $base-max-width: 57rem;
   $sm-max-width: 50.125rem;
+  $justify: space-around;
   .MoreInfo_moreInfoSection__wxZDE {
     $moreInfo-text-align: left;
     $more-info-gap: $space-32;
@@ -22,12 +26,22 @@ $xs-max-width: 27rem; // giá trị mặc định
 }
 .SectionTitle_sectionTitle__SIXMx:before {
   position: absolute;
-  top: 214.5rem;
-  left: 7.2rem;
+  top: 0;
+  left: 0;
   content: "";
   block-size: 1px;
   inline-size: 3rem;
   background-color: #e44232;
+}
+.PreFooterSection_ctaContainer__IYnrU {
+  -webkit-margin-before: $space-128;
+  margin-block-start: $space-128;
+}
+
+.PreFooterSection_peace__BoauT {
+  inline-size: 100%;
+  -webkit-margin-before: calc(#{$space-96} * -1);
+  margin-block-start: calc(#{$space-96} * -1);
 }
 }
 
@@ -476,6 +490,134 @@ button {
   -webkit-margin-end: $space-8;
   margin-inline-end: $space-8;
 }
+
+.Stats_statsSection__btu5Q {
+    display: flex;
+    -webkit-margin-after: $space-64;
+    margin-block-end: $space-64;
+    margin-left: 7.5rem;
+
+}
+.Stats_statsSection__btu5Q .Stats_statsIntroContainer__captB {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+}
+.Stats_statsSection__btu5Q .Stats_copy__8pmye, .Stats_statsSection__btu5Q .Stats_statItem__DwyX4 {
+  -webkit-margin-before: $space-24;
+  margin-block-start: $space-24;
+  -webkit-margin-after: $space-32;
+  margin-block-end: $space-32;
+}
+.Stats_statsSection__btu5Q .Stats_copy__8pmye {
+  max-inline-size: 300px;
+  -webkit-margin-end: $space-64;
+  margin-inline-end: $space-64;
+}
+.SectionTitle_sectionTitle__SIXMx {
+  position: relative;
+  -webkit-padding-before: $space-24;
+  padding-block-start: $space-24;
+  -webkit-margin-after: $space-8;
+  margin-block-end: $space-8;
+}
+.Stats_statsSection__btu5Q .Stats_statsBody__Pt6Ml {
+  color: $color-grey-07;
+}
+.Stats_statsSection__btu5Q .Stats_link__1pb1y {
+  display: inline;
+}
+.Stats_statsSection__btu5Q .Stats_grid__vFfOQ {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: $space-32;
+}
+.Stats_statsSection__btu5Q .Stats_statItem__DwyX4 {
+  inline-size: 100%;
+  max-inline-size: 150px;
+}
+.Stats_statsSection__btu5Q .Stats_statItem__DwyX4 img {
+  width: 150px;
+  -webkit-margin-after: $space-24;
+  margin-block-end: $space-24;
+}
+.Stats_statsSection__btu5Q .Stats_statCopy__GjbLO>* {
+  display: block;
+}
+.PreFooterSection_ctaContainer__IYnrU {
+  
+  position: relative;
+  padding: $space-32;
+  background-color: $cta-background;
+}
+.PreFooterSection_cadet__IZ2HH {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  transform: translateY(-96%);
+  fill: $cta-background;
+}
+  .PreFooterSection_cta__Zk1gD {
+    display: flex;
+    justify-content: $justify;
+
+}
+.PreFooterSection_peace__BoauT {
+  display: none;
+  inline-size: 42%;
+  max-inline-size: 25.25rem;
+  block-size: auto;
+  max-block-size: 29.25rem;
+  z-index: 1;
+}
+.PreFooterSection_copy__H5eff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-inline-size: 28.0625rem;
+}
+.PreFooterSection_heading__UGaQI {
+  -webkit-margin-after: $space-16;
+  margin-block-end: $space-16;
+}
+.bXyFcEiLciX08fO_FTAT {
+  background-color: $color-red-04;
+  border-color: $color-red-04;
+  color: #fff;
+}
+.t32yF_JvtgCKCrPo7bfF {
+  border-radius: 0.625rem;
+  min-height: 1.75rem;
+  padding: 0.5rem 1.2rem;
+}
+.izlk72KPoj8avrWb0S2K {
+  align-items: center;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  min-width: 100px;
+  outline: none;
+  overflow: visible;
+  text-transform: none;
+  transition: $animation-duration-350 $animation-ease-base;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: normal;
+}
+a.Get-Started-Button_mobile__gX_mJ {
+  display: none;
+}
+.IEIuTjAGLnbg8277XDqw {
+  border-radius: $border-radius-base;
+  min-height: 2.5rem;
+  padding: $space-8 $space-16;
+}
 ///////////////////////////////////////RESPONSIVE///////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -545,6 +687,8 @@ button {
   -webkit-margin-after: $space-8;
   margin-block-end: $space-8;
 }
+
+
 }
 //mobile and tablet
     @media (max-width: 1023px) {
@@ -821,7 +965,15 @@ button {
   .FeaturesSection_featureGrid div:nth-child(3) {
     order: 2;
 }
-  
+
+.PreFooterSection_copy__H5eff {
+  inline-size: 52%;
+  align-items: flex-start;
+  text-align: left;
+}
+.PreFooterSection_peace__BoauT {
+  display: block;
+}
 }
 
   //pc

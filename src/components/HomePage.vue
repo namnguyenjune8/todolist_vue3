@@ -266,7 +266,7 @@
                           </div>
                           <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1n:">
                             <div class="item-list_item__wklU_">
-                              <p class="font-size EkQLWhUQXERswBk6sxIb">Ajouter une tâche</p>
+                              <p class="font-size font-p-section-feature">Ajouter une tâche</p>
                             </div></div>
                           </li>
                           <li class="">
@@ -276,7 +276,7 @@
                               </svg></div>
                               <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1o:">
                                 <div class="item-list_item__wklU_">
-                                  <p class="font-size EkQLWhUQXERswBk6sxIb">Divisez-la en sous-tâches</p>
+                                  <p class="font-size font-p-section-feature">Divisez-la en sous-tâches</p>
                                 </div>
                               </div></li>
                               <li class="">
@@ -285,7 +285,7 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.333 4A2.667 2.667 0 0 1 20 6.667v10.666A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.333V6.667A2.667 2.667 0 0 1 6.667 4h10.666zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13V6.75a1.75 1.75 0 0 0-1.62-1.745L17.25 5zM9 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM8 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3-1.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" fill="currentColor"></path></svg></div>
                                     <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1p:">
                                       <div class="item-list_item__wklU_">
-                                        <p class="font-size EkQLWhUQXERswBk6sxIb">Déplacez des tâches dans des projets</p></div></div>
+                                        <p class="font-size font-p-section-feature">Déplacez des tâches dans des projets</p></div></div>
                                       </li>
                                         <li class="">
                                           <div class="item-list_icon__WWgTK">
@@ -294,21 +294,21 @@
                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 2.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM22.04 7h-4.08a1 1 0 0 1-.87-1.492c.474-.839 1.444-1.258 2.91-1.258 1.464 0 2.434.42 2.908 1.258A1 1 0 0 1 22.04 7z" fill="currentColor"></path></svg></div>
                                               <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1q:">
                                                 <div class="item-list_item__wklU_">
-                                                  <p class="font-size EkQLWhUQXERswBk6sxIb">Partagez vos projets</p></div></div>
+                                                  <p class="font-size font-p-section-feature">Partagez vos projets</p></div></div>
                                                 </li>
                                                   <li class=""><div class="item-list_icon__WWgTK">
                                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.822 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.518 1.084-4.277 1.084-1.113 0-1.92-.197-3.658-.776C10.204 13.178 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777V19.5a.5.5 0 0 1-1 0V5zm4.5 7c-1.367 0-2.535.216-3.5.654V5.277c.886-.515 2.05-.777 3.5-.777.97 0 1.704.178 3.342.724 1.737.58 2.545.776 3.658.776 1.367 0 2.535-.216 3.5-.654v7.377c-.886.515-2.05.777-3.5.777-.97 0-1.704-.178-3.342-.724C10.421 12.196 9.613 12 8.5 12z" fill="currentColor"></path></svg></div>
                                                       <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1r:">
                                                         <div class="item-list_item__wklU_">
-                                                          <p class="font-size EkQLWhUQXERswBk6sxIb">Définissez un niveau de priorité à vos tâches</p></div></div>
+                                                          <p class="font-size font-p-section-feature">Définissez un niveau de priorité à vos tâches</p></div></div>
                                                         </li>
                                                           <li class=""><div class="item-list_icon__WWgTK">
                                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M4.854 5.354a1.974 1.974 0 0 0-.272 2.453.5.5 0 1 1-.843.538 2.974 2.974 0 0 1 4.106-4.106.5.5 0 0 1-.536.843 1.976 1.976 0 0 0-2.455.272zm11.839-.272a1.974 1.974 0 0 1 2.725 2.727.5.5 0 1 0 .843.536 2.976 2.976 0 0 0-4.106-4.106.5.5 0 1 0 .538.843zm.245 13.063A7.471 7.471 0 0 1 12 20a7.47 7.47 0 0 1-4.938-1.855l-1.708 1.709a.5.5 0 1 1-.708-.708l1.709-1.708a7.5 7.5 0 1 1 11.29 0l1.709 1.708a.5.5 0 1 1-.708.707l-1.708-1.708zM12 19a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zm0-11v4h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5V8a.5.5 0 1 1 1 0z" fill="currentColor"></path></svg></div>
                                                               <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1s:">
                                                                 <div class="item-list_item__wklU_">
-                                                                  <p class="font-size EkQLWhUQXERswBk6sxIb">Réglez des rappels</p>
+                                                                  <p class="font-size font-p-section-feature">Réglez des rappels</p>
                                                                   <p class="font-size Y5eL4cjJHcHaCQ8EbL7V item-list_onlyForPro__2uV7o">Pro</p></div></div>
                                                           </li>
                                                             <li class="">
@@ -317,7 +317,7 @@
                                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 6h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 13 6.5v3a1.5 1.5 0 0 0 1.5 1.5h3A1.5 1.5 0 0 0 19 9.5v-3A1.5 1.5 0 0 0 17.5 5h-3zm-8 9h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5A1.5 1.5 0 0 1 6.5 13h3a1.5 1.5 0 0 1 1.5 1.5v3A1.5 1.5 0 0 1 9.5 19h-3A1.5 1.5 0 0 1 5 17.5v-3zm9.5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3zM6.5 6h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3z" fill="currentColor"></path></svg></div>
                                                                       <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1t:">
                                                                           <div class="item-list_item__wklU_">
-                                                                            <p class="font-size EkQLWhUQXERswBk6sxIb">Ajoutez des intégrations</p></div></div>
+                                                                            <p class="font-size font-p-section-feature">Ajoutez des intégrations</p></div></div>
                                                               </li>
                                                             <li class="">
                                                                   <div class="item-list_icon__WWgTK">
@@ -327,7 +327,7 @@
                                                                   </div>
                                                                   <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1u:">
                                                                     <div class="item-list_item__wklU_">
-                                                                      <p class="font-size EkQLWhUQXERswBk6sxIb">Créez des vues filtrées</p>
+                                                                      <p class="font-size font-p-section-feature">Créez des vues filtrées</p>
                                                                     </div>
                                                                   </div>
                                                                 </li>
@@ -339,7 +339,7 @@
                                                                   </div>
                                                                   <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1v:">
                                                                     <div class="item-list_item__wklU_">
-                                                                      <p class="font-size EkQLWhUQXERswBk6sxIb">Achever des tâches</p>
+                                                                      <p class="font-size font-p-section-feature">Achever des tâches</p>
                                                                     </div>
                                                                   </div>
                                                                 </li>
@@ -415,6 +415,53 @@
             </div>
           </div>
         </section>
+        <section class="Stats_statsSection__btu5Q YttEe7kIjjIAtcbhghld">
+          <div class="Stats_copy__8pmye Stats_statsIntroContainer__captB">
+            <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx">Un gestionnaire de tâches de confiance</h2>
+            <p class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">Nous développons Todoist depuis 16 ans<!-- --> <!-- -->et 87 jours.<!-- --> 
+              <a class="font-size SjnnY1xZKQ3O3YyVHw3D c7d0EkDeVohrgiPouQHa Stats_link__1pb1y" rel="noopener noreferrer" href="https://blog.doist.com/no-exit-strategy/?utm_source=todoist&amp;utm_medium=home&amp;utm_campaign=new_td_landing_page_c2205" target="_blank">Nous sommes là pour rester.</a>
+            </p>
+          </div>
+          <div class="Stats_grid__vFfOQ">
+            <div class="Stats_statItem__DwyX4">
+              <img alt="" loading="lazy" width="149" height="103" decoding="async" data-nimg="1" style="color:transparent" sizes="(max-width: 149px) 100vw, 149px" srcset="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_480/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 480w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_768/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 768w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_960/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 960w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1120/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 1120w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1536/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 1536w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2240/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 2240w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0 2624w" src="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-users.jpg?_a=ATCqVcY0">
+              <p class="Stats_statCopy__GjbLO">
+                <span class="font-size font-style DLF4ip7391hTQFmMhXrA">+30 millions</span>
+                <span class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">téléchargements</span>
+              </p>
+            </div>
+            <div class="Stats_statItem__DwyX4">
+              <img alt="" loading="lazy" width="149" height="103" decoding="async" data-nimg="1" style="color:transparent" sizes="(max-width: 149px) 100vw, 149px" srcset="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_480/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 480w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_768/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 768w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_960/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 960w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1120/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 1120w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1536/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 1536w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2240/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 2240w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0 2624w" src="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-tasks.jpg?_a=ATCqVcY0">
+              <p class="Stats_statCopy__GjbLO">
+                <span class="font-size font-style DLF4ip7391hTQFmMhXrA">+2 milliards</span>
+                <span class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">de tâches achevées</span>
+              </p>
+            </div>
+            <div class="Stats_statItem__DwyX4">
+              <img alt="" loading="lazy" width="149" height="103" decoding="async" data-nimg="1" style="color:transparent" sizes="(max-width: 149px) 100vw, 149px" srcset="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_480/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 480w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_768/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 768w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_960/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 960w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1120/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 1120w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1536/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 1536w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2240/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 2240w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0 2624w" src="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-countries.jpg?_a=ATCqVcY0">
+              <p class="Stats_statCopy__GjbLO">
+                <span class="font-size font-style DLF4ip7391hTQFmMhXrA">+160 pays</span>
+                <span class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">dans le monde entier</span>
+              </p>
+            </div>
+            <div class="Stats_statItem__DwyX4">
+              <img alt="" loading="lazy" width="149" height="103" decoding="async" data-nimg="1" style="color:transparent" sizes="(max-width: 149px) 100vw, 149px" srcset="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_480/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 480w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_768/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 768w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_960/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 960w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1120/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 1120w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_1536/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 1536w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2240/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 2240w, https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0 2624w" src="https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://todoist.com/static/home/stats/illustration-icon-pro.jpg?_a=ATCqVcY0">
+              <p class="Stats_statCopy__GjbLO">
+                <span class="font-size font-style DLF4ip7391hTQFmMhXrA">+1 million</span>
+                <span class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">Utilisateurs Pro</span>
+              </p></div></div>
+            </section>
+            <section class="PreFooterSection_ctaContainer__IYnrU">
+              <svg class="PreFooterSection_cadet__IZ2HH" viewBox="0 0 1440 21" preserveAspectRatio="xMaxYMax" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 20.006h1440V.496l-170 19.51L290 .496H0v19.51Z"></path>
+              </svg>
+              <div class="PreFooterSection_cta__Zk1gD font-inline">
+                <img src="https://todoist.com/_next/static/images/peace@2x_158f4453627629ae1dd3ec115a559630.webp" alt="" class="PreFooterSection_peace__BoauT">
+                <div class="PreFooterSection_copy__H5eff">
+                  <h2 class="font-size liIOVrso64nx4V5gWj4A mWJbs2TuAw9nS7uYCe19 PreFooterSection_heading__UGaQI">Ayez l'esprit tranquille avec Todoist</h2>
+                  <a class="font-size font-style DLF4ip7391hTQFmMhXrA izlk72KPoj8avrWb0S2K t32yF_JvtgCKCrPo7bfF bXyFcEiLciX08fO_FTAT Get-Started-Button_desktop__n4aY2 ga-get-started-button" href="/auth/signup">S'inscrire</a>
+                  <a class="font-size font-li izlk72KPoj8avrWb0S2K IEIuTjAGLnbg8277XDqw bXyFcEiLciX08fO_FTAT Get-Started-Button_mobile__gX_mJ" href="https://d2092e1xll5m4f.cloudfront.net/Todoist_for_Windows_Desktop_2_7_6.exe">S'inscrire</a></div></div>
+                </section>
 </div>
   </template>
   
