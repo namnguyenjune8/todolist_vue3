@@ -15,6 +15,20 @@ $xs-max-width: 27rem; // giá trị mặc định
 @media screen and (min-width: 960px) {
   $base-max-width: 57rem;
   $sm-max-width: 50.125rem;
+  .MoreInfo_moreInfoSection__wxZDE {
+    $moreInfo-text-align: left;
+    $more-info-gap: $space-32;
+    $copy-space: $space-64;
+}
+.SectionTitle_sectionTitle__SIXMx:before {
+  position: absolute;
+  top: 214.5rem;
+  left: 7.2rem;
+  content: "";
+  block-size: 1px;
+  inline-size: 3rem;
+  background-color: #e44232;
+}
 }
 
 @media screen and (min-width: 1120px) {
@@ -119,7 +133,7 @@ $xs-max-width: 27rem; // giá trị mặc định
 .complexity-slider-section_backgroundIllus__V5IUD {
   position: absolute;
   z-index: -1;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -394,7 +408,78 @@ button {
   $line-height: $body-sm-line-height $body-line-height;
  
 }
-///////////////////////////////////////RESPONSIVE////////////////////////////////
+.MoreInfo_moreInfoSection__wxZDE {
+  text-align: center;
+  -webkit-margin-after: $space-64;
+  margin-block-end: $space-64;
+  -webkit-padding-start: $space-32;
+  padding-inline-start: $space-32;
+  -webkit-padding-end: $space-32;
+  padding-inline-end: $space-32;
+}
+.MoreInfo_moreInfoSection__wxZDE .MoreInfo_copy__UDL81 {
+  max-inline-size: 46.875rem;
+  -webkit-margin-after: $space-32;
+  margin-block-end: $space-32;
+}
+.MoreInfo_moreInfoSection__wxZDE .MoreInfo_body__T2OMn, .MoreInfo_moreInfoSection__wxZDE .MoreInfo_moreInfoBody__h8BSA {
+  color: $color-grey-07;
+  font-weight: 100;
+    font-size: 19px;
+    line-height: 1.7rem;
+}
+.VB6LgUAmqv1DrUQhn1Tq {
+  $min-font-size: $body-lg-min-size;
+  $max-font-size: $body-lg-max-size;
+  $font-family: $font-family-body;
+  $font-weight: $body-lg-font-weight,$body-font-weight;
+  $letter-spacing: $body-letter-spacing;
+  $line-height: $body-lg-line-height,$body-line-height;
+  
+}
+
+.MoreInfo_moreInfoSection__wxZDE .MoreInfo_grid__a_jwV {
+    display: grid;
+    grid-gap: $space-16;
+    grid-template-columns: repeat(2,1fr);
+    text-align: start;
+}
+.MoreInfo_moreInfoSection__wxZDE .MoreInfo_moreInfoItem__zKnwQ img {
+  -webkit-margin-after: $space-8;
+  margin-block-end: $space-8;
+}
+.MoreInfo_moreInfoSection__wxZDE .MoreInfo_moreInfoItem__zKnwQ h3 {
+  -webkit-margin-after: $space-4;
+  margin-block-end: $space-4;
+  opacity: 0.8;
+}
+.DLF4ip7391hTQFmMhXrA {
+  $font-weight: $font-weight-semibold;
+}
+.ArrowLink_arrowLink__5Pnmk {
+  color: $color-blue-04;
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+}
+.typography_bodyMdBold__a_kPa, .typography_bodyMd__F9_zn {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 400;
+  align-items: center;
+  text-decoration: none;
+}
+.ArrowLink_arrowLink__5Pnmk .ArrowLink_arrowContainer__5f_ez {
+  display: flex;
+  align-items: center;
+  -webkit-margin-end: $space-8;
+  margin-inline-end: $space-8;
+}
+///////////////////////////////////////RESPONSIVE///////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //mobile devices
 @media (max-width: 767px) {
@@ -449,6 +534,16 @@ button {
 .complexity-slider-section_anchor__E60MW {
   -webkit-margin-before: -130px;
   margin-block-start: -130px;
+}
+.MoreInfo_moreInfoSection__wxZDE {
+ $grid-template: repeat(auto-fit,minmax(21.25rem,1fr));
+}
+.SectionTitle_sectionTitle__SIXMx {
+  position: relative;
+  -webkit-padding-before: $space-24;
+  padding-block-start: $space-24;
+  -webkit-margin-after: $space-8;
+  margin-block-end: $space-8;
 }
 }
 //mobile and tablet
@@ -678,6 +773,9 @@ button {
     max-inline-size: 420px;
     margin-left: 4rem
   }
+  .liIOVrso64nx4V5gWj4A {
+    font-size: 2rem;
+  }
 }
 //tablet vs pc
 @media screen and (min-width: 768px) {
@@ -804,6 +902,9 @@ button {
   .FeaturesSection_featureGrid .FeaturesSection_copy__DveLH {
     max-inline-size: 420px;
     margin-left: 9rem
+  }
+  .liIOVrso64nx4V5gWj4A {
+    font-size: 2.3rem;
   }
   }
 

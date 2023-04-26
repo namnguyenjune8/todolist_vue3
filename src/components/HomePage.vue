@@ -215,7 +215,7 @@
         <div class="Yq3CJKRaogbgzFJ2SQ5k complexity-slider-section_anchor__E60MW" id="simple-or-complex">          
         </div>
         <div class="font-inline">
-          <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px 0px 32px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1088px; height: 1612px; padding: 0px 0px 646px;">
+          <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px 0px 32px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1088px; height: 950px; padding: 0px 0px 646px;">
             <div class="complexity-slider-section_complexitySliderSection__lVDZf" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1088px; width: 1088px; max-height: 965.5px; height: 965.5px; padding: 64px 16px 32px; transform: translate(0px, 0px);">
               <img class="complexity-slider-section_backgroundIllus__V5IUD" src="https://todoist.com/static/home/complexity-slider/bg@2x.jpg" width="1440" height="909">
               <div class="complexity-slider-section_heading__10som">
@@ -345,6 +345,76 @@
                                                                 </li>
                                                               </ol>
                     </div></div></div></div></div></div></div></section>
+      <section class="MoreInfo_moreInfoSection__wxZDE font-inline">
+        <div class="MoreInfo_copy__UDL81">
+          <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx" style="text-align: start;margin-bottom: 10px;">Une application de gestion de tâches extrêmement simple et puissante</h2>
+          <p class="font-size VB6LgUAmqv1DrUQhn1Tq MoreInfo_body__T2OMn" style="font-size: 1.4rem;text-align: start;font-weight: 100;line-height: 2rem;margin-bottom: 4rem;">+30 millions de personnes organisent des milliards de tâches dans Todoist pour leur travail, leur éducation et leur vie personnelle.</p>
+        </div>
+        <div class="MoreInfo_grid__a_jwV">
+          <div class="MoreInfo_moreInfoItem__zKnwQ">
+            <img src="https://todoist.com/_next/static/images/icon-1_ad640abe99c49ae1a0c9eb05bb104956.webp" alt="" width="90" height="80">
+            <h3 class="font-size font-style DLF4ip7391hTQFmMhXrA title-wrap">Toujours à vos côtés
+            </h3>
+            <p class="font-size EkQLWhUQXERswBk6sxIb MoreInfo_moreInfoBody__h8BSA">Utilisez les applications, les extensions et les widgets de Todoist sur tous vos appareils et vos plateformes. </p>
+            <a class="ArrowLink_arrowLink__5Pnmk typography_bodyMd__F9_zn" href="/downloads">
+              <div class="ArrowLink_arrowContainer__5f_ez"><svg height="10" width="12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 5V5 5zm.59-.61L7.472.127a.406.406 0 0 0-.589 0 .442.442 0 0 0 0 .61s3.714 3.835 3.712 3.835H.583a.424.424 0 0 0-.416.431c0 .239.186.432.416.432h10.013L6.884 9.263a.443.443 0 0 0 0 .61.407.407 0 0 0 .59 0l4.115-4.263a.885.885 0 0 0 0-1.22z" fill="#316fea" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="">Télécharger les applications</span>
+            </a>
+          </div>
+          <div class="MoreInfo_moreInfoItem__zKnwQ">
+            <img src="https://todoist.com/_next/static/images/icon-2_4210d085bc16b95d19ee9605ca20a8d5.webp" alt="" width="90" height="80">
+            <h3 class="font-size font-style DLF4ip7391hTQFmMhXrA title-wrap">Des modèles à revendre</h3>
+            <p class="font-size EkQLWhUQXERswBk6sxIb MoreInfo_moreInfoBody__h8BSA">Téléchargez des dizaines de modèles pour lancer vos projets, quels qu'ils soient.</p>
+            <a class="ArrowLink_arrowLink__5Pnmk typography_bodyMd__F9_zn" href="/templates">
+              <div class="ArrowLink_arrowContainer__5f_ez">
+                <svg height="10" width="12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 5V5 5zm.59-.61L7.472.127a.406.406 0 0 0-.589 0 .442.442 0 0 0 0 .61s3.714 3.835 3.712 3.835H.583a.424.424 0 0 0-.416.431c0 .239.186.432.416.432h10.013L6.884 9.263a.443.443 0 0 0 0 .61.407.407 0 0 0 .59 0l4.115-4.263a.885.885 0 0 0 0-1.22z" fill="#316fea" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="">Découvrir les modèles</span>
+            </a>
+          </div>
+          <div class="MoreInfo_moreInfoItem__zKnwQ">
+            <img src="https://todoist.com/_next/static/images/icon-3_934c1a18c604c9a66c9b964a973bea5f.webp" alt="" width="90" height="80">
+            <h3 class="font-size font-style DLF4ip7391hTQFmMhXrA title-wrap">Personnalisez Todoist</h3>
+            <p class="font-size EkQLWhUQXERswBk6sxIb MoreInfo_moreInfoBody__h8BSA">Personnalisez vos listes avec des filtres, des étiquettes, des niveaux de priorité et plus encore.</p>
+            <a class="ArrowLink_arrowLink__5Pnmk typography_bodyMd__F9_zn" href="/features">
+              <div class="ArrowLink_arrowContainer__5f_ez">
+                <svg height="10" width="12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 5V5 5zm.59-.61L7.472.127a.406.406 0 0 0-.589 0 .442.442 0 0 0 0 .61s3.714 3.835 3.712 3.835H.583a.424.424 0 0 0-.416.431c0 .239.186.432.416.432h10.013L6.884 9.263a.443.443 0 0 0 0 .61.407.407 0 0 0 .59 0l4.115-4.263a.885.885 0 0 0 0-1.22z" fill="#316fea" fill-rule="evenodd"></path>
+                </svg></div><span class="">Voir toutes les fonctionnalités</span>
+              </a>
+            </div>
+            <div class="MoreInfo_moreInfoItem__zKnwQ">
+              <img src="https://todoist.com/_next/static/images/icon-4_f546eb9c7155fd7ea242af71babeeeca.webp" alt="" width="90" height="80">
+              <h3 class="font-size font-style DLF4ip7391hTQFmMhXrA title-wrap">Connectez tous vos outils</h3>
+              <p class="font-size EkQLWhUQXERswBk6sxIb MoreInfo_moreInfoBody__h8BSA">Connectez Todoist à votre agenda, votre assistant vocal et +70 outils supplémentaires.</p>
+              <a class="ArrowLink_arrowLink__5Pnmk typography_bodyMd__F9_zn" href="/integrations">
+                <div class="ArrowLink_arrowContainer__5f_ez"><svg height="10" width="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5V5 5zm.59-.61L7.472.127a.406.406 0 0 0-.589 0 .442.442 0 0 0 0 .61s3.714 3.835 3.712 3.835H.583a.424.424 0 0 0-.416.431c0 .239.186.432.416.432h10.013L6.884 9.263a.443.443 0 0 0 0 .61.407.407 0 0 0 .59 0l4.115-4.263a.885.885 0 0 0 0-1.22z" fill="#316fea" fill-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="">Installez des intégrations</span>
+              </a>
+            </div>
+            <div class="MoreInfo_moreInfoItem__zKnwQ">
+              <img src="https://todoist.com/_next/static/images/icon-5_e69e3f0df7d5163b16ea9cd82df9bec9.webp" alt="" width="90" height="80">
+              <h3 class="font-size font-style DLF4ip7391hTQFmMhXrA title-wrap">Méthodes de productivité</h3>
+              <p class="font-size EkQLWhUQXERswBk6sxIb MoreInfo_moreInfoBody__h8BSA">Des recommandations de productivité personnelles basées sur vos traits de caractère et vos forces.</p>
+              <a class="ArrowLink_arrowLink__5Pnmk typography_bodyMd__F9_zn" href="/productivity-methods">
+                <div class="ArrowLink_arrowContainer__5f_ez">
+                  <svg height="10" width="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5V5 5zm.59-.61L7.472.127a.406.406 0 0 0-.589 0 .442.442 0 0 0 0 .61s3.714 3.835 3.712 3.835H.583a.424.424 0 0 0-.416.431c0 .239.186.432.416.432h10.013L6.884 9.263a.443.443 0 0 0 0 .61.407.407 0 0 0 .59 0l4.115-4.263a.885.885 0 0 0 0-1.22z" fill="#316fea" fill-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="">Répondre au quiz</span>
+              </a>
+            </div>
+          </div>
+        </section>
 </div>
   </template>
   
