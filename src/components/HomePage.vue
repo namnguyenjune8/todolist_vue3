@@ -233,7 +233,7 @@
                     <div class="pill_pillContainer__p0sYF">
                       <p class="font-size font-size-subheading pill_pill__F79dx">Simple</p>
                     </div>
-                    <div class="slider-container_progressContainer__gCB4C">
+                    <div class="slider-container_progressContainer__gCB4C" style="cursor: grab;">
                       <div class="slider-container_progressBackground__Nk2j_">
                       </div>
                       <div class="slider-container_progressBar__l8Sp2" style="--progress:0%;"></div>

@@ -40,8 +40,8 @@ $xs-max-width: 27rem; // giá trị mặc định
 }
 .font-inline {
   $inline-padding: ($space-24);
-  $inline-size: ($base-max-width,100%);
-  $inline-size-padded: calc(($inline-size) + ($inline-padding)*2);
+  $inline-size: calc(#{$base-max-width} * 1px + 100%);
+  $inline-size-padded: calc(#{$inline-size} + (#{$inline-padding} * 2));
   $max-inline-size: ($inline-size-padded);
 
     -webkit-margin-end: auto;
@@ -50,7 +50,7 @@ $xs-max-width: 27rem; // giá trị mặc định
     inline-size: 100%;
     margin-inline-end: auto;
     margin-inline-start: auto;
-    max-inline-size:$max-inline-size;
+    max-inline-size:70rem;
     padding-inline-end:$inline-padding;
     padding-inline-start:$inline-padding;
 }
@@ -183,7 +183,7 @@ $xs-max-width: 27rem; // giá trị mặc định
   max-inline-size: 100%;
 }
 .slider-container_sliderContainer__lqq_n {
-  $coef: 0.93;
+  --coef: 0.93;
   display: flex;
   flex-direction: column;
   block-size: 100%;
@@ -243,7 +243,7 @@ $xs-max-width: 27rem; // giá trị mặc định
   user-select: none;
   pointer-events: none;
   position: absolute;
-  top: calc(($space-8) + var(--progress) * #{$coef});
+  top: calc(0.5rem + var(--progress) * #{$coef});
   left: 50%;
   transform: translateX(-50%);
   background-color: #dad6d3;
@@ -258,7 +258,7 @@ $xs-max-width: 27rem; // giá trị mặc định
   user-select: none;
   pointer-events: none;
   position: absolute;
-  top: calc(var(--progress) * $coef);
+  top: calc(var(--progress) *  #{$coef});
   left: 50%;
   transform: translateX(-50%);
   cursor: grab;
@@ -306,13 +306,18 @@ button {
   height: 100%;
   width: 100%;
 }
+.iCUK0p2nk8mU4Y3jwtF4 svg path {
+  fill: currentColor;
+  fill-opacity: 1;
+  transition: inherit;
+}
 .thumb-indicator_stepTitle__COVoR {
   animation: $animation-duration-600 $animation-ease-base 0s 1 thumb-indicator_slideIn__8CJFb;
   position: absolute;
   right: 45px;
   top: 50%;
   transform: translateY(-50%);
-  block-size: 28px;
+  block-size: 13px;
   min-inline-size: 100px;
   color: #fff;
   background-color: $color-grey-07;
@@ -440,6 +445,10 @@ button {
 }
 .FeaturesSection_featureGrid .FeaturesSection_featureSectionHeader__Y9e6y {
   font-size: 1.4rem;
+}
+.complexity-slider-section_anchor__E60MW {
+  -webkit-margin-before: -130px;
+  margin-block-start: -130px;
 }
 }
 //mobile and tablet
