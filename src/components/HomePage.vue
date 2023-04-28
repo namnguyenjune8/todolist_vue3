@@ -26,7 +26,7 @@
                 </a>
                 <ul class="ressources-task ressources-task-board " :class="{ show: Ressources_board_open }">
                     <li class="ressources-task-li backgroundColor" >
-                      <a href="" class="ressources-task-li_a  font font-style">
+                      <a href="" class="ressources-task-li_a  font-ressources-task font-style">
                           <div class="ressources-task_dropdown">
                             <p class="ressources-task_dropdown_title " >Intégrations</p>
                             <p class="ressources-task_dropdown_content font-style" >Connectez Todoist à des outils tels qu'IFTTT, Alexa, Google Agenda et plus...</p>
@@ -34,7 +34,7 @@
                       </a>
                     </li>
                     <li class="ressources-task-li backgroundColor " >
-                      <a href="" class="ressources-task-li_a  font font-style">
+                      <a href="" class="ressources-task-li_a  font-ressources-task font-style">
                           <div class="ressources-task_dropdown">
                             <p class="ressources-task_dropdown_title " >Guide de démarrage</p>
                             <p class="ressources-task_dropdown_content font-style" >Tout ce qu'il vous faut pour être opérationnel sur Todoist en quelques minutes.</p>
@@ -42,7 +42,7 @@
                       </a>
                     </li>
                     <li class="ressources-task-li backgroundColor" >
-                      <a href="" class="ressources-task-li_a font font-style">
+                      <a href="" class="ressources-task-li_a font-ressources-task font-style">
                           <div class="ressources-task_dropdown">
                             <p class="ressources-task_dropdown_title " >Centre d'aide</p>
                             <p class="ressources-task_dropdown_content font-style" >Des réponses à vos questions et des conseils pour tirer le meilleur parti de Todoist.</p>
@@ -50,7 +50,7 @@
                       </a>
                     </li>
                     <li class="ressources-task-li backgroundColor" >
-                      <a href="" class="ressources-task-li_a  font font-style">
+                      <a href="" class="ressources-task-li_a  font-ressources-task font-style">
                           <div class="ressources-task_dropdown">
                             <p class="ressources-task_dropdown_title " >Méthodes de productivité + Quiz</p>
                             <p class="ressources-task_dropdown_content font-style" >Découvrez les méthodes de productivité les plus populaires et les mieux adaptées à votre situation.</p>
@@ -58,7 +58,7 @@
                       </a>
                     </li>
                     <li class="ressources-task-li backgroundColor" >
-                      <a href="" class="ressources-task-li_a font font-style">
+                      <a href="" class="ressources-task-li_a font-ressources-task font-style">
                           <div class="ressources-task_dropdown">
                             <p class="ressources-task_dropdown_title " >Blog</p>
                             <p class="ressources-task_dropdown_content font-style" >Des conseils de productivité uniques, des astuces pour mieux utiliser Todoist et des actualités sur nos produits.</p>
@@ -91,6 +91,7 @@
 
 
       </div>
+      <main>
       <section class="Intro_section">
         <div class="IntroSection_title">
           <h1 class="font-size title-font  title-wrap">
@@ -347,7 +348,7 @@
                     </div></div></div></div></div></div></div></section>
       <section class="MoreInfo_moreInfoSection__wxZDE font-inline">
         <div class="MoreInfo_copy__UDL81">
-          <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx" style="text-align: start;margin-bottom: 10px;">Une application de gestion de tâches extrêmement simple et puissante</h2>
+          <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx SectionTitle_sectionTitle__0MASZ" style="margin-bottom: 10px;">Une application de gestion de tâches extrêmement simple et puissante</h2>
           <p class="font-size VB6LgUAmqv1DrUQhn1Tq MoreInfo_body__T2OMn" style="font-size: 1.4rem;text-align: start;font-weight: 100;line-height: 2rem;margin-bottom: 4rem;">+30 millions de personnes organisent des milliards de tâches dans Todoist pour leur travail, leur éducation et leur vie personnelle.</p>
         </div>
         <div class="MoreInfo_grid__a_jwV">
@@ -415,7 +416,7 @@
             </div>
           </div>
         </section>
-        <section class="Stats_statsSection__btu5Q YttEe7kIjjIAtcbhghld">
+        <section class="Stats_statsSection__btu5Q font-inline">
           <div class="Stats_copy__8pmye Stats_statsIntroContainer__captB">
             <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx">Un gestionnaire de tâches de confiance</h2>
             <p class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">Nous développons Todoist depuis 16 ans<!-- --> <!-- -->et 87 jours.<!-- --> 
@@ -450,8 +451,8 @@
                 <span class="font-size font-style DLF4ip7391hTQFmMhXrA">+1 million</span>
                 <span class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">Utilisateurs Pro</span>
               </p></div></div>
-            </section>
-            <section class="PreFooterSection_ctaContainer__IYnrU">
+          </section>
+         <section class="PreFooterSection_ctaContainer__IYnrU">
               <svg class="PreFooterSection_cadet__IZ2HH" viewBox="0 0 1440 21" preserveAspectRatio="xMaxYMax" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 20.006h1440V.496l-170 19.51L290 .496H0v19.51Z"></path>
               </svg>
@@ -461,7 +462,188 @@
                   <h2 class="font-size liIOVrso64nx4V5gWj4A mWJbs2TuAw9nS7uYCe19 PreFooterSection_heading__UGaQI">Ayez l'esprit tranquille avec Todoist</h2>
                   <a class="font-size font-style DLF4ip7391hTQFmMhXrA izlk72KPoj8avrWb0S2K t32yF_JvtgCKCrPo7bfF bXyFcEiLciX08fO_FTAT Get-Started-Button_desktop__n4aY2 ga-get-started-button" href="/auth/signup">S'inscrire</a>
                   <a class="font-size font-li izlk72KPoj8avrWb0S2K IEIuTjAGLnbg8277XDqw bXyFcEiLciX08fO_FTAT Get-Started-Button_mobile__gX_mJ" href="https://d2092e1xll5m4f.cloudfront.net/Todoist_for_Windows_Desktop_2_7_6.exe">S'inscrire</a></div></div>
-                </section>
+          </section>
+          <footer class="MXtus134DS2wrEDs2ROV _d57SGn8vOubB9hlfp6Y" style="background-color: #fff9f3;border-top: 1px solid #ccc;">
+            <div class="mJhiVUepQlh3t2sM5K9e font-inline menu-inline">
+              <div class="iTrmyjlwfZjq93__YwbZ">
+                <a class="font-size SjnnY1xZKQ3O3YyVHw3D OEsFnI6y_oUfzgMNpsxQ" aria-label="Accueil" href="/home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 32" fill="none" preserveAspectRatio="xMinYMid slice" height="32" class="Q50myWJrCdcY1FP3c1OV">
+                  <rect width="32" height="32" fill="#232115" rx="5.12"></rect>
+                  <path fill="#fff9f3" d="m6.764 14.993 6.374-3.668.008-.005 6.568-3.78c.277-.16.29-.65-.02-.828l-.217-.124c-.317-.18-.727-.414-.902-.516a1.02 1.02 0 0 0-.997.012c-.155.09-10.501 6.038-10.847 6.235a1.349 1.349 0 0 1-1.339 0L-.072 9.144v2.699l.056.032c1.364.795 4.592 2.675 5.382 3.12.479.27.937.264 1.398-.002Z"></path>
+                  <path fill="#fff9f3" d="m6.764 20.385 6.366-3.664.024-.014 6.56-3.775c.277-.16.29-.651-.02-.828l-.217-.124c-.316-.18-.727-.414-.902-.516a1.02 1.02 0 0 0-.997.012c-.155.089-10.501 6.038-10.847 6.234a1.349 1.349 0 0 1-1.339 0c-.326-.188-5.464-3.174-5.464-3.174v2.698l.056.033c1.365.795 4.592 2.674 5.382 3.12.479.27.937.264 1.398-.002Z"></path>
+                  <path fill="#fff9f3" d="m13.139 22.108-6.375 3.669c-.461.266-.92.272-1.398.002-.79-.446-4.017-2.325-5.382-3.12l-.056-.033v-2.698l5.464 3.174c.413.239.925.236 1.339 0 .346-.196 10.692-6.145 10.847-6.235a1.02 1.02 0 0 1 .997-.012 125.007 125.007 0 0 0 1.12.64c.31.178.296.669.019.829l-6.575 3.784Z"></path>
+                  <g class="ZBX6ji69IqUYUnnbG9hO">
+                    <path fill="#232115" d="M55.65 18.73c0 .515.089 1.015.264 1.492.176.481.432.904.774 1.273.342.37.751.664 1.23.884.48.221 1.025.331 1.632.331.608 0 1.152-.11 1.631-.33a3.768 3.768 0 0 0 2.005-2.158c.173-.477.26-.977.26-1.492s-.087-1.015-.26-1.494a3.779 3.779 0 0 0-.774-1.271 3.863 3.863 0 0 0-1.23-.885 3.865 3.865 0 0 0-1.632-.333c-.607 0-1.152.113-1.631.333-.48.221-.889.516-1.23.885a3.74 3.74 0 0 0-.775 1.27c-.175.48-.263.98-.263 1.495Zm-3.316 0c0-1.05.19-2.005.567-2.862a6.665 6.665 0 0 1 1.535-2.198 6.78 6.78 0 0 1 2.293-1.411 8 8 0 0 1 2.821-.497c.995 0 1.935.166 2.82.497a6.81 6.81 0 0 1 2.294 1.41 6.689 6.689 0 0 1 1.535 2.199c.378.857.567 1.811.567 2.862 0 1.05-.19 2.005-.567 2.862a6.688 6.688 0 0 1-1.535 2.198A6.766 6.766 0 0 1 62.37 25.2a7.934 7.934 0 0 1-2.819.497 7.946 7.946 0 0 1-2.821-.497 6.735 6.735 0 0 1-2.293-1.409 6.664 6.664 0 0 1-1.535-2.198c-.378-.857-.567-1.811-.567-2.862ZM71.63 18.734c0 .515.087 1.015.263 1.492.175.481.431.904.773 1.273.342.37.752.664 1.231.884.48.22 1.024.331 1.631.331.608 0 1.152-.11 1.632-.33a3.762 3.762 0 0 0 2.005-2.158 4.35 4.35 0 0 0 .26-1.492c0-.515-.087-1.015-.26-1.494a3.772 3.772 0 0 0-2.005-2.156 3.864 3.864 0 0 0-1.632-.333c-.607 0-1.152.113-1.63.333a3.86 3.86 0 0 0-1.232.885c-.341.369-.598.792-.773 1.27-.176.48-.264.98-.264 1.495Zm7.852 4.644h-.057c-.479.812-1.122 1.402-1.934 1.77a6.292 6.292 0 0 1-2.626.552c-1.033 0-1.949-.178-2.752-.538a6.162 6.162 0 0 1-2.059-1.48 6.311 6.311 0 0 1-1.3-2.212 8.26 8.26 0 0 1-.441-2.736 7.8 7.8 0 0 1 .47-2.738 6.813 6.813 0 0 1 1.312-2.212 6.076 6.076 0 0 1 2.031-1.478c.794-.36 1.66-.54 2.6-.54.627 0 1.18.065 1.66.193.479.13.902.295 1.27.5a4.807 4.807 0 0 1 1.575 1.325h.084V6.473c0-.331.263-.722.724-.722h1.873c.434 0 .722.364.722.722v18.173c0 .462-.391.723-.722.723h-1.705a.732.732 0 0 1-.725-.721v-1.27ZM88.157 18.73c0 .515.088 1.015.264 1.492.175.481.432.904.774 1.273a3.85 3.85 0 0 0 1.23.884c.48.221 1.024.331 1.632.331.607 0 1.152-.11 1.631-.33a3.763 3.763 0 0 0 2.005-2.158c.173-.477.26-.977.26-1.492s-.087-1.015-.26-1.494a3.774 3.774 0 0 0-2.005-2.156 3.866 3.866 0 0 0-1.631-.333c-.608 0-1.153.113-1.632.333-.479.221-.888.516-1.23.885-.342.369-.599.792-.774 1.27-.176.48-.264.98-.264 1.495Zm-3.316 0c0-1.05.189-2.005.567-2.862a6.663 6.663 0 0 1 1.534-2.198 6.78 6.78 0 0 1 2.293-1.411 8 8 0 0 1 2.822-.497c.994 0 1.935.166 2.819.497a6.81 6.81 0 0 1 2.295 1.41 6.689 6.689 0 0 1 1.534 2.199c.378.857.568 1.811.568 2.862 0 1.05-.19 2.005-.567 2.862a6.688 6.688 0 0 1-1.535 2.198 6.766 6.766 0 0 1-2.295 1.409 7.934 7.934 0 0 1-2.82.497 7.946 7.946 0 0 1-2.82-.497 6.736 6.736 0 0 1-2.294-1.409 6.662 6.662 0 0 1-1.534-2.198c-.378-.857-.567-1.811-.567-2.862ZM100.945 7.588c0-.535.198-.999.594-1.398.398-.395.9-.594 1.507-.594.608 0 1.121.19 1.535.568.414.378.623.852.623 1.424a1.85 1.85 0 0 1-.623 1.424c-.414.378-.927.567-1.535.567-.607 0-1.109-.198-1.507-.596-.396-.396-.594-.86-.594-1.395ZM114.64 15.77c-.331 0-.575-.25-.616-.359-.276-.723-1.155-.994-1.865-.994-1.119 0-1.997.519-1.997 1.41 0 .863.85 1.04 1.375 1.199.576.174 1.677.414 2.284.557a7.419 7.419 0 0 1 1.728.636c1.761.915 2.012 2.354 2.012 3.22 0 3.197-3.167 4.257-5.366 4.257-1.695 0-4.879-.257-5.578-3.488-.068-.315.21-.798.721-.798h1.832c.36 0 .603.263.674.47.235.649.983 1.14 2.245 1.14 1.353 0 2.153-.537 2.153-1.251 0-.462-.261-.872-.603-1.104-1.026-.696-3.564-.774-4.942-1.508-.528-.28-1.852-.922-1.852-3.109 0-3.015 2.741-4.286 5.149-4.286 3.551 0 4.854 2.243 5.001 3.075.081.459-.176.934-.692.934h-1.663ZM117.833 14.129v-1.373c0-.327.258-.721.717-.721h1.769v-3.37c0-.36.244-.58.429-.66l1.89-.825c.552-.227.999.228.999.666v4.189h2.928c.453 0 .722.395.722.721v1.375a.745.745 0 0 1-.721.723h-2.929v5.808c0 .663-.018 1.182.235 1.565.233.351.574.482 1.257.482.196 0 .371-.033.519-.083a.706.706 0 0 1 .868.317c.216.418.463.877.636 1.206.191.361.037.825-.311.993-.561.273-1.339.494-2.406.494-.884 0-1.385-.096-1.945-.29a3.347 3.347 0 0 1-1.417-1c-.324-.396-.484-.926-.604-1.516-.122-.59-.15-1.304-.15-2.08v-5.896h-1.765c-.463 0-.721-.4-.721-.725ZM41.928 14.129v-1.373c0-.327.259-.721.717-.721h2.021v-3.37c0-.36.245-.58.43-.66l1.89-.825c.552-.227.999.228.999.666v4.189h2.928c.452 0 .722.395.722.721v1.375a.745.745 0 0 1-.722.723h-2.928v5.808c0 .663-.018 1.182.235 1.565.232.351.573.482 1.257.482.196 0 .37-.033.519-.083a.706.706 0 0 1 .867.317c.217.418.464.877.637 1.206.19.361.037.825-.311.993-.562.273-1.34.494-2.406.494-.884 0-1.385-.096-1.945-.29a3.351 3.351 0 0 1-1.418-1c-.324-.396-.484-.926-.603-1.516-.122-.59-.15-1.304-.15-2.08v-5.896H42.65c-.463 0-.722-.4-.722-.725ZM102.115 25.37h1.876a.723.723 0 0 0 .721-.723v-11.89a.723.723 0 0 0-.721-.722h-1.876a.724.724 0 0 0-.721.722v11.89c0 .398.325.722.721.722Z"></path></g>
+                </svg>
+                </a>
+                    <p class="font-size Y5eL4cjJHcHaCQ8EbL7V ghjFWYpaMMS6gFyyKavs">20 millions d'utilisateurs organisent leur travail et leur quotidien avec Todoist.</p></div><div class="JBVd9xPdHa6T2HcOw9nl">
+                      <div class="lWbjERyt2pLGn3F9mPqi">
+                        <p class="font-size font-li DLF4ip7391hTQFmMhXrA TZubjRgryCWQXB67QkAP">Fonctionnalités</p>
+                        <ol class="b7MGHZeFYj8Es7O3Y5FG">
+                          <li class="BMzxjIUzYbp1Q25OJjHV">
+                              <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/features">Fonctionnalités<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd"><path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                    </svg></a></li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/business">Business
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/pricing">Tarifs
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/templates">Modèles
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ol>
+                </div>
+                <div class="lWbjERyt2pLGn3F9mPqi">
+                  <p class="font-size font-li DLF4ip7391hTQFmMhXrA TZubjRgryCWQXB67QkAP">Ressources</p>
+                  <ol class="b7MGHZeFYj8Es7O3Y5FG">
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/downloads">Applications
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/help?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">Centre d'aide
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/productivity-methods">Méthodes de productivité
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/integrations">Intégrations
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="/channelpartners">Channel Partners
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                        </svg></a></li><li class="BMzxjIUzYbp1Q25OJjHV">
+                          <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://developer.todoist.com">API
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                              <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                            </svg></a></li>
+                            <li class="BMzxjIUzYbp1Q25OJjHV">
+                              <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://status.todoist.com/">Statut
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                                  <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                </svg></a></li></ol></div>
+                                
+                                <div class="lWbjERyt2pLGn3F9mPqi">
+                                  <p class="font-size font-li DLF4ip7391hTQFmMhXrA TZubjRgryCWQXB67QkAP">Doist</p>
+                                  <ol class="b7MGHZeFYj8Es7O3Y5FG">
+                                    <li class="BMzxjIUzYbp1Q25OJjHV">
+                                      <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://doist.com?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">À propos
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                                          <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                        </svg></a></li>
+                                        <li class="BMzxjIUzYbp1Q25OJjHV">
+                                          <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://doist.com/jobs?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">Emplois
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                                              <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                            </svg></a></li><li class="BMzxjIUzYbp1Q25OJjHV">
+                                              <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://blog.doist.com?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">Blog
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                                                  <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                                </svg></a></li>
+                                                <li class="BMzxjIUzYbp1Q25OJjHV">
+                                                  <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://doist.com/press/?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">Presse
+                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd"><path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                                  </svg></a></li>
+                                                  <li class="BMzxjIUzYbp1Q25OJjHV">
+                                                    <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1" href="https://twist.com/?utm_source=todoist&amp;utm_medium=landing_page&amp;utm_campaign=home">Twist
+                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
+                                                        <path fill-rule="evenodd" d="M6.47 3.47a.75.75 0 0 0 0 1.06L9.94 8l-3.47 3.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0z" clip-rule="evenodd"></path>
+                                                      </svg></a></li></ol></div>
+                                                      <div class="UZBe4HG8k_xSdw13rsgB">
+                                                        <ul class="zIzWA00Iqj66gojcYj49">
+                                                          <li>
+                                                            <a class="font-size RoZJQRuSAywd550zWiXo font backgroundColor o9DYmt4xfLaImiVzI9dQ pHhuYvJY2LjocMtj5pZv" aria-label="Todoist sur Twitter" href="https://twitter.com/todoist">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                                <path d="M22.393 3.339a8.874 8.874 0 0 1-2.868 1.121A4.452 4.452 0 0 0 16.23 3c-2.49 0-4.512 2.072-4.512 4.628 0 .363.039.715.116 1.054-3.75-.193-7.076-2.034-9.304-4.837a4.711 4.711 0 0 0-.61 2.329c0 1.605.796 3.022 2.008 3.852a4.424 4.424 0 0 1-2.046-.577v.056c0 2.244 1.556 4.115 3.622 4.539a4.305 4.305 0 0 1-1.19.162c-.29 0-.574-.027-.849-.081.575 1.838 2.24 3.177 4.216 3.212A8.91 8.91 0 0 1 1 19.256a12.564 12.564 0 0 0 6.919 2.077c8.303 0 12.842-7.05 12.842-13.167 0-.202-.004-.403-.011-.6A9.269 9.269 0 0 0 23 5.17a8.84 8.84 0 0 1-2.592.729 4.621 4.621 0 0 0 1.985-2.56z"></path>
+                                                              </svg></a></li><li>
+                                                                <a class="font-size RoZJQRuSAywd550zWiXo font backgroundColor o9DYmt4xfLaImiVzI9dQ pHhuYvJY2LjocMtj5pZv" aria-label="Todoist sur YouTube" href="https://www.youtube.com/channel/UCQ_61yRKscCnkIJBPoR15EA">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                                    <path d="M3.598 4.242C6.958 4 11.995 4 11.995 4h.01s5.038 0 8.396.242l.155.016c.515.05 1.427.138 2.25.995.72.725.954 2.371.954 2.371S24 9.557 24 11.49v1.812c0 1.933-.24 3.866-.24 3.866s-.234 1.646-.954 2.371c-.823.858-1.735.946-2.25.996-.057.005-.108.01-.155.016-3.358.241-8.401.249-8.401.249s-6.24-.057-8.16-.24c-.091-.017-.202-.03-.327-.045-.609-.073-1.562-.187-2.32-.976-.719-.725-.953-2.37-.953-2.37S0 15.234 0 13.301V11.49c0-1.933.24-3.866.24-3.866s.234-1.646.954-2.37c.823-.858 1.735-.947 2.25-.996.057-.006.108-.01.154-.016zm12.408 7.912L9.521 8.787l.001 6.711 6.484-3.344z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                                  </svg></a></li><li>
+                                                                    <a class="font-size RoZJQRuSAywd550zWiXo font backgroundColor o9DYmt4xfLaImiVzI9dQ pHhuYvJY2LjocMtj5pZv" aria-label="Todoist sur Facebook" href="https://facebook.com/todoist">
+                                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                                        <path d="M23 12.067C23 5.955 18.075 1 12 1S1 5.955 1 12.067C1 17.591 5.023 22.17 10.281 23v-7.734H7.488v-3.199h2.793V9.63c0-2.774 1.643-4.306 4.155-4.306 1.203 0 2.462.216 2.462.216v2.724h-1.387c-1.366 0-1.792.853-1.792 1.73v2.074h3.05l-.487 3.2h-2.563V23C18.977 22.17 23 17.591 23 12.067z"></path>
+                                                                      </svg></a></li><li>
+                                                                        <a class="font-size RoZJQRuSAywd550zWiXo font backgroundColor o9DYmt4xfLaImiVzI9dQ pHhuYvJY2LjocMtj5pZv" aria-label="Todoist sur Instagram" href="https://www.instagram.com/todoistofficial">
+                                                                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                                            <path fill-rule="evenodd" d="M6.608 12a5.392 5.392 0 1 1 10.784 0 5.392 5.392 0 0 1-10.784 0zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" clip-rule="evenodd"></path>
+                                                                            <path d="M17.605 7.655a1.26 1.26 0 1 0 0-2.52 1.26 1.26 0 0 0 0 2.52z"></path>
+                                                                            <path fill-rule="evenodd" d="M12 1.5c-2.852 0-3.21.012-4.33.063-1.117.051-1.88.229-2.548.488a5.146 5.146 0 0 0-1.86 1.211 5.146 5.146 0 0 0-1.21 1.86c-.26.668-.438 1.431-.489 2.549C1.513 8.79 1.5 9.148 1.5 12c0 2.852.012 3.21.063 4.33.051 1.117.229 1.88.488 2.548.269.69.628 1.276 1.211 1.86.584.583 1.17.942 1.86 1.21.668.26 1.431.438 2.549.489 1.12.05 1.477.063 4.329.063 2.852 0 3.21-.012 4.33-.063 1.117-.051 1.88-.229 2.548-.488a5.149 5.149 0 0 0 1.86-1.211 5.149 5.149 0 0 0 1.21-1.86c.26-.668.438-1.431.489-2.549.05-1.12.063-1.477.063-4.329 0-2.852-.012-3.21-.063-4.33-.051-1.117-.229-1.88-.488-2.548a5.148 5.148 0 0 0-1.211-1.86 5.147 5.147 0 0 0-1.86-1.21c-.668-.26-1.431-.438-2.549-.489C15.21 1.513 14.852 1.5 12 1.5zm0 1.892c2.804 0 3.136.01 4.243.061 1.024.047 1.58.218 1.95.362.49.19.84.418 1.207.785.367.368.595.717.785 1.207.144.37.315.926.362 1.95.05 1.107.061 1.44.061 4.243 0 2.804-.01 3.136-.061 4.243-.047 1.024-.218 1.58-.362 1.95-.19.49-.418.84-.785 1.207a3.254 3.254 0 0 1-1.207.785c-.37.144-.926.315-1.95.362-1.107.05-1.44.061-4.243.061-2.804 0-3.136-.01-4.243-.061-1.024-.047-1.58-.218-1.95-.362-.49-.19-.84-.418-1.207-.785a3.253 3.253 0 0 1-.785-1.207c-.144-.37-.315-.926-.362-1.95-.05-1.107-.061-1.44-.061-4.243 0-2.804.01-3.136.061-4.243.047-1.024.218-1.58.362-1.95.19-.49.418-.84.785-1.207a3.253 3.253 0 0 1 1.207-.785c.37-.144.926-.315 1.95-.362 1.107-.05 1.44-.061 4.243-.061z" clip-rule="evenodd"></path>
+                                                                          </svg></a></li></ul></div></div></div>
+                                                                          <!-- <div class="kJ_P1SL9ZvC1wLstHbqp" style="background-color:rgba(0, 0, 0, 0.05)">
+                                                                            <div class="GHxray4ydudJBMpJdMPS font-inline menu-inline">
+                                                                              <div class="VxijLRKqoSQVEzALqkgZ">
+                                                                                <ul class="DFwZNR0zYDpb7fqUM3o6">
+                                                                                  <a class="font-size tH0z6dflaPdI1YyOhjCF" href="/security">Sécurité</a>
+                                                                                  <a class="font-size tH0z6dflaPdI1YyOhjCF" href="/privacy">Confidentialité</a>
+                                                                                  <a class="font-size tH0z6dflaPdI1YyOhjCF" href="/terms">CGU</a></ul>
+                                                                                  <p class="font-size tH0z6dflaPdI1YyOhjCF">© Doist Inc.</p></div>
+                                                                                  <div class="pGaQBhZ1Qh3tUas7U3QJ">
+                                                                                    <div class=""><div class="">
+                                                                                      <div class="vTIN3fP7nNhIbeK_N3YV" style="--stack:var(--space-12)">
+                                                                                        <div class="yfJzOw4KLuIxWXg2L1RV hCYLYFRPa7x1YWWmBOQT dJ5vG7SdSqW18a6awhAX">
+                                                                                          <div class="f1UEDh2juopQJOFpTNtO">
+                                                                                            <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.012 3.14a5.249 5.249 0 0 0-3.208 4.11h2.46c.058-1.424.275-2.723.61-3.73.043-.13.09-.256.138-.38ZM8 1.25a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5Zm0 1.505a.647.647 0 0 0-.19.18c-.165.21-.346.56-.513 1.06-.277.832-.475 1.965-.53 3.255h2.467c-.056-1.29-.254-2.423-.531-3.256-.167-.5-.348-.849-.514-1.059A.647.647 0 0 0 8 2.755Zm2.735 4.495c-.057-1.424-.274-2.723-.61-3.73a7.557 7.557 0 0 0-.137-.38 5.25 5.25 0 0 1 3.208 4.11h-2.46Zm-1.501 1.5H6.766c.056 1.289.254 2.422.531 3.255.167.5.348.849.514 1.059.096.122.16.166.189.18a.647.647 0 0 0 .19-.18c.165-.21.346-.56.513-1.06.277-.832.475-1.965.53-3.254Zm-3.222 4.108a7.476 7.476 0 0 1-.138-.379c-.335-1.006-.552-2.306-.61-3.73h-2.46a5.25 5.25 0 0 0 3.208 4.11Zm3.976 0c.049-.123.095-.25.138-.379.335-1.006.552-2.306.61-3.73h2.46a5.25 5.25 0 0 1-3.208 4.11Z"></path>
+                                                                                            </svg></div>
+                                                                                            <select class="DaZiETNVTwsEP7Ky_aTl font-size V0mB2BLv4MZSojdU0DJU zW1zRZ8jOBjHSOiU5mJP qp2mWWXVKuG2VN5YPA2F" id="language-picker" aria-describedby="language-picker-message language-picker-description" aria-label="Select language">
+                                                                                              <option value="cs">Čeština</option>
+                                                                                              <option value="da">Dansk</option>
+                                                                                              <option value="de">Deutsch</option>
+                                                                                              <option value="en">English</option>
+                                                                                              <option value="es">Español</option>
+                                                                                              <option value="fi">Suomi</option>
+                                                                                              <option value="fr" selected="">Français</option>
+                                                                                              <option value="it">Italiano</option>
+                                                                                              <option value="ja">日本語</option>
+                                                                                              <option value="ko">한국어</option>
+                                                                                              <option value="nb">Norsk</option>
+                                                                                              <option value="nl">Nederlands</option>
+                                                                                              <option value="pl">Polski</option>
+                                                                                              <option value="pt-BR">Português (Brazil)</option>
+                                                                                              <option value="ru">Pусский (Russian)</option>
+                                                                                              <option value="sv">Svenska</option>
+                                                                                              <option value="tr">Türkçe</option>
+                                                                                              <option value="zh-CN">中文 (简体)</option>
+                                                                                              <option value="zh-TW">中文 (繁體)</option>
+                                                                                            </select>
+                                                                                            <span class="Pva1um76EjjNI_RQc8FE" aria-hidden="true">
+                                                                                              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                <path d="M8 2.25c.21 0 .41.1.55.25l2.75 3a.75.75 0 0 1-1.1 1L8 4.12l-2.2 2.4A.75.75 0 0 1 4.7 5.5l2.75-3A.75.75 0 0 1 8 2.25Zm-3.26 7.2a.75.75 0 0 1 1.06.05L8 11.9l2.2-2.4a.75.75 0 0 1 1.1 1l-2.75 3a.75.75 0 0 1-1.1 0l-2.75-3a.75.75 0 0 1 .04-1.05Z"></path></svg></span></div></div></div></div></div>
+                                                                                              </div>
+                                                                                            </div> -->
+                                                                                              </footer>
+  
+</main>
 </div>
   </template>
   
@@ -481,6 +663,43 @@
     },
     toggle_Ressources_board() {
       this.Ressources_board_open = !this.Ressources_board_open;
+    },
+    initSlider() {
+      const slider = document.querySelector('.slider-container_progressContainer__gCB4C');
+      const progressBar = document.querySelector('.slider-container_progressBar__l8Sp2');
+      const thumb = document.querySelector('.thumb-indicator_indicator__bwh0p');
+      
+      slider.addEventListener('mousedown', function(event) {
+        let shiftX = event.clientX - slider.getBoundingClientRect().left;
+        let sliderCoords = slider.getBoundingClientRect();
+        
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+        
+        function onMouseMove(event) {
+          let newLeft = event.clientX - shiftX - sliderCoords.left;
+          
+          if (newLeft < 0) {
+            newLeft = 0;
+          }
+          
+          let rightEdge = slider.offsetWidth - thumb.offsetWidth;
+          
+          if (newLeft > rightEdge) {
+            newLeft = rightEdge;
+          }
+          
+          let progress = newLeft / rightEdge * 100;
+          
+          thumb.style.left = newLeft + 'px';
+          progressBar.style.setProperty('--progress', progress + '%');
+        }
+        
+        function onMouseUp() {
+          document.removeEventListener('mouseup', onMouseUp);
+          document.removeEventListener('mousemove', onMouseMove);
+        }
+      });
     }
   },
   data() {
@@ -488,6 +707,9 @@
       headerRight: false,
       Ressources_board_open: false,
     };
+  },
+  mounted() {
+    this.initSlider();
   },
   }
   </script>
