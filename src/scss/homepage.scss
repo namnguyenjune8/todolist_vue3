@@ -288,6 +288,12 @@ $cta-background: $color-td-secondary-light;
 .dot-indicator_dotIndicator__QJt9V.dot-indicator_highlighted__HD9kq {
   background-color: --color-selected;
 }
+.dot-indicator_dotIndicator__QJt9V.active {
+  background-color: $color-red-04;
+  border-radius: 50%;
+  
+
+}
 .dot-indicator_dotIndicator__QJt9V {
   --progress: 0%;
   
@@ -318,11 +324,14 @@ $cta-background: $color-td-secondary-light;
   cursor: grab;
   display: flex;
 }
-.thumb-indicator_indicator__bwh0p>div:first-child {
-  transform: scale(.5);
+.thumb-indicator_indicator__bwh0p_hidden {
   visibility: hidden;
-  animation: $animation-duration-350 $animation-ease-base $animation-duration-150 1 forwards thumb-indicator_scaleUp__Brz7o;
 }
+// .thumb-indicator_indicator__bwh0p>div:first-child {
+//   transform: scale(.5);
+//   visibility: hidden;
+//   animation: $animation-duration-350 $animation-ease-base $animation-duration-150 1 forwards thumb-indicator_scaleUp__Brz7o;
+// }
 .hQ3H3WWEM21uH24mIwLo.AN7zneJ_O9i4zxxDjzAg {
   height: 32px;
   width: 32px;
@@ -371,7 +380,7 @@ button {
   right: 45px;
   top: 50%;
   transform: translateY(-50%);
-  block-size: 13px;
+  block-size: 18px;
   min-inline-size: 100px;
   color: #fff;
   background-color: $color-grey-07;
@@ -380,7 +389,6 @@ button {
 }
 .thumb-indicator_stepTitle__COVoR:before {
   content: "";
-  background-image: url(https://todoist.com/static/home/complexity-slider/cadet.svg);
   z-index: -1;
   position: absolute;
   inline-size: 58px;
@@ -802,6 +810,12 @@ $column-group-gap: $space-24;
   $letter-spacing: $body-2xs-letter-spacing,$body-letter-spacing;
   $line-height: $body-2xs-line-height,$body-line-height;
 }
+
+
+
+
+
+
 ///////////////////////////////////////RESPONSIVE///////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
