@@ -1230,9 +1230,6 @@ $column-group-gap: $space-24;
       font-weight: 400;
       font-size: 1.2rem;
   }
-  // body {
-  //   min-width: 767px;
-  // }
   .FeaturesSection_featureGrid {
     $featureGridColumns: repeat(-1,1fr);
     $featureGridTextAlign: left;
@@ -1351,8 +1348,24 @@ $column-group-gap: $space-24;
 .PreFooterSection_heading__UGaQI {
   font-size: 1.8rem;
 }
+.mJhiVUepQlh3t2sM5K9e { 
+  gap: 3rem;
+}
 .mJhiVUepQlh3t2sM5K9e.font-inline {
-  max-inline-size: 19rem;
+  max-inline-size: 21rem;
+}
+.ZBX6ji69IqUYUnnbG9hO {
+  display: none;
+}
+.iTrmyjlwfZjq93__YwbZ {
+  grid-template-columns: 25px 300px;
+}
+.JBVd9xPdHa6T2HcOw9nl {
+  margin-left: 20px;
+}
+.lWbjERyt2pLGn3F9mPqi {
+  grid-template-columns: 0.8fr;
+  gap: 1.5rem;
 }
 }
 //mobile and tablet
@@ -1558,6 +1571,41 @@ $column-group-gap: $space-24;
   .liIOVrso64nx4V5gWj4A {
     font-size: 2rem;
   }
+  .FeaturesSection_featureGrid.font-inline {
+    max-inline-size: 43rem;
+  }
+  .complexity-slider-section_topContainer__CvfPV  {
+    max-inline-size: 47rem;
+  }
+  .MoreInfo_moreInfoSection__wxZDE.font-inline {
+    max-inline-size: 40rem;
+  }
+  .Stats_statsSection__btu5Q.font-inline {
+    max-inline-size: 45rem;
+  }
+  .pin-spacer {
+    width: 720px;
+  }
+  .complexity-slider-section_complexitySliderSection__lVDZf {
+    translate: none;
+    rotate: none;
+    scale: none;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    max-width: 720px;
+    width: 720px;
+    max-height: 941.5px;
+    height: 941.5px;
+    padding: 64px 16px 32px;
+    transform: translate(0px, 0px);
+  }
+  .mJhiVUepQlh3t2sM5K9e.font-inline {
+    max-inline-size: 52rem;
+
+}
+.PreFooterSection_cta__Zk1gD.font-inline {
+  max-inline-size: 44rem;
+}
 }
 //tablet vs pc
 @media screen and (min-width: 768px) {
@@ -1599,9 +1647,7 @@ $column-group-gap: $space-24;
       text-align: $featureGridTextAlign center;
     
   }
-  .FeaturesSection_featureGrid.font-inline {
-    max-inline-size: 70rem;
-  }
+  
   .FeaturesSection_featureGrid div:nth-child(3) {
     order: 2;
 }
@@ -1740,6 +1786,9 @@ $column-group-display: flex;
   .ressources-task-li {
     list-style: none;
     padding: 0rem 1.5rem;
+  }
+  .FeaturesSection_featureGrid.font-inline {
+    max-inline-size: 70rem;
   }
   .title-font {
     $min-font-size: $major-2xl-min-size;

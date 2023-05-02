@@ -324,10 +324,10 @@
           </picture>
         </div>
       </section>
-      <section class="complexity-slider-section_topContainer__CvfPR">
+       <section class="complexity-slider-section_topContainer__CvfPR">
         <div class="Yq3CJKRaogbgzFJ2SQ5k complexity-slider-section_anchor__E60MW" id="simple-or-complex">
         </div>
-        <div class="font-inline">
+        <div class="complexity-slider-section_topContainer__CvfPV font-inline">
           <div class="pin-spacer">
             <div class="complexity-slider-section_complexitySliderSection__lVDZf">
               <img class="complexity-slider-section_backgroundIllus__V5IUD"
@@ -507,9 +507,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
-      <section class="MoreInfo_moreInfoSection__wxZDE font-inline">
+       <section class="MoreInfo_moreInfoSection__wxZDE font-inline">
         <div class="MoreInfo_copy__UDL81">
           <h2
             class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx SectionTitle_sectionTitle__0MASZ"
@@ -675,8 +675,8 @@
               href="https://d2092e1xll5m4f.cloudfront.net/Todoist_for_Windows_Desktop_2_7_6.exe">S'inscrire</a>
           </div>
         </div>
-      </section>
-      <footer class="MXtus134DS2wrEDs2ROV _d57SGn8vOubB9hlfp6Y"
+      </section> 
+       <footer class="MXtus134DS2wrEDs2ROV _d57SGn8vOubB9hlfp6Y"
         style="background-color: #fff9f3;border-top: 1px solid #ccc;">
         <div class="mJhiVUepQlh3t2sM5K9e font-inline menu-inline">
           <div class="iTrmyjlwfZjq93__YwbZ">
@@ -926,7 +926,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
       <!-- <div class="kJ_P1SL9ZvC1wLstHbqp" style="background-color:rgba(0, 0, 0, 0.05)">
                                                                             <div class="GHxray4ydudJBMpJdMPS font-inline menu-inline">
                                                                               <div class="VxijLRKqoSQVEzALqkgZ">
@@ -969,7 +969,7 @@
                                                                                                 <path d="M8 2.25c.21 0 .41.1.55.25l2.75 3a.75.75 0 0 1-1.1 1L8 4.12l-2.2 2.4A.75.75 0 0 1 4.7 5.5l2.75-3A.75.75 0 0 1 8 2.25Zm-3.26 7.2a.75.75 0 0 1 1.06.05L8 11.9l2.2-2.4a.75.75 0 0 1 1.1 1l-2.75 3a.75.75 0 0 1-1.1 0l-2.75-3a.75.75 0 0 1 .04-1.05Z"></path></svg></span></div></div></div></div></div>
                                                                                               </div>
                                                                                             </div> -->
-    </footer>
+    </footer> 
 
   </main>
 </div></template>
@@ -1023,6 +1023,7 @@ export default {
     const thumbIndicators = document.querySelectorAll('.thumb-indicator_indicator__bwh0p');
     const olElement = document.querySelector('.item-list_itemList__jPHJI');
     const liElements = olElement.querySelectorAll('li');
+  
 
 
   //   // Xác định vị trí scroll hiện tại
@@ -1145,7 +1146,8 @@ export default {
   height: 80px;
   padding: 0 20px;
   background-color: #fff;
-
+  position: sticky;
+  top: 0;
 }
 
 .header__left {
