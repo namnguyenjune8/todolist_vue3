@@ -328,10 +328,8 @@
         <div class="Yq3CJKRaogbgzFJ2SQ5k complexity-slider-section_anchor__E60MW" id="simple-or-complex">
         </div>
         <div class="font-inline">
-          <div class="pin-spacer"
-            style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px 0px 32px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1088px; height: 950px; padding: 0px 0px 646px;">
-            <div class="complexity-slider-section_complexitySliderSection__lVDZf"
-              style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1088px; width: 1088px; max-height: 965.5px; height: 965.5px; padding: 64px 16px 32px; transform: translate(0px, 0px);">
+          <div class="pin-spacer">
+            <div class="complexity-slider-section_complexitySliderSection__lVDZf">
               <img class="complexity-slider-section_backgroundIllus__V5IUD"
                 src="https://todoist.com/static/home/complexity-slider/bg@2x.jpg" width="1440" height="909">
               <div class="complexity-slider-section_heading__10som">
@@ -511,16 +509,12 @@
         </div>
       </section>
 
-
-
-
       <section class="MoreInfo_moreInfoSection__wxZDE font-inline">
         <div class="MoreInfo_copy__UDL81">
           <h2
             class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx SectionTitle_sectionTitle__0MASZ"
             style="margin-bottom: 10px;">Une application de gestion de tâches extrêmement simple et puissante</h2>
-          <p class="font-size VB6LgUAmqv1DrUQhn1Tq MoreInfo_body__T2OMn"
-            style="font-size: 1.4rem;text-align: start;font-weight: 100;line-height: 2rem;margin-bottom: 4rem;">+30
+          <p class="font-size VB6LgUAmqv1DrUQhn1Tq MoreInfo_body__T2OMn">+30
             millions de personnes organisent des milliards de tâches dans Todoist pour leur travail, leur éducation et
             leur vie personnelle.</p>
         </div>
@@ -615,7 +609,7 @@
           <h2 class="font-size title-h2-section-font title-wrap SectionTitle_sectionTitle__SIXMx">Un gestionnaire de
             tâches de confiance</h2>
           <p class="font-size font-p-section-feature Stats_statsBody__Pt6Ml">Nous développons Todoist depuis 16
-            ans<!-- --> <!-- -->et 87 jours.<!-- -->
+            ans et 87 jours.
             <a class="font-size SjnnY1xZKQ3O3YyVHw3D c7d0EkDeVohrgiPouQHa Stats_link__1pb1y" rel="noopener noreferrer"
               href="https://blog.doist.com/no-exit-strategy/?utm_source=todoist&amp;utm_medium=home&amp;utm_campaign=new_td_landing_page_c2205"
               target="_blank">Nous sommes là pour rester.</a>
@@ -714,7 +708,7 @@
               <p class="font-size font-li DLF4ip7391hTQFmMhXrA TZubjRgryCWQXB67QkAP">Fonctionnalités</p>
               <ol class="b7MGHZeFYj8Es7O3Y5FG">
                 <li class="BMzxjIUzYbp1Q25OJjHV">
-                  <a class="font-size font-li font backgroundColor IESvGIboWqfsXKFfl5m1"
+                  <a class="font-size font-li  backgroundColor font IESvGIboWqfsXKFfl5m1"
                     href="/features">Fonctionnalités<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                       viewBox="0 0 16 16" class="T4V9y6v2rlu3n550XIYd">
                       <path fill-rule="evenodd"
@@ -1031,12 +1025,12 @@ export default {
     const liElements = olElement.querySelectorAll('li');
 
 
-    // Xác định vị trí scroll hiện tại
+  //   // Xác định vị trí scroll hiện tại
     function getCurrentScrollPosition() {
       return window.pageYOffset || document.documentElement.scrollTop;
     }
 
-    // Gán/bỏ class active cho progress tương ứng
+  //   // Gán/bỏ class active cho progress tương ứng
     function setActiveProgress() {
       const currentScrollPosition = getCurrentScrollPosition();
       if (currentScrollPosition < 2545) {
@@ -1143,7 +1137,8 @@ export default {
 }
 </script>
   
-<style lang="scss">.header-bar {
+<style lang="scss">
+.header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
