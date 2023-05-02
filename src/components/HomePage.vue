@@ -340,7 +340,7 @@
                 <a class="font-size SjnnY1xZKQ3O3YyVHw3D c7d0EkDeVohrgiPouQHa" href="/features">Explorez plus de
                   fonctions</a>
               </div>
-              <div class="complexity-slider-section_sliderContainer__mK_S7">
+              <div  class="complexity-slider-section_sliderContainer__mK_S7">
                 <div class="complexity-slider-section_contentContainer__IF_TF">
                   <div class="complexity-slider-section_videoContainer__O8vaa">
                     <video muted="">
@@ -423,134 +423,84 @@
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 3c-.276 0-.5.252-.5.563V11.5H3.562c-.31 0-.562.224-.562.5s.252.5.563.5H11.5v7.938c0 .31.224.562.5.562s.5-.252.5-.563V12.5h7.938c.31 0 .562-.224.562-.5s-.252-.5-.563-.5H12.5V3.562c0-.31-.224-.562-.5-.562z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1n:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Ajouter une tâche</p>
-                            </div>
-                          </div>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3c-.276 0-.5.252-.5.563V11.5H3.562c-.31 0-.562.224-.562.5s.252.5.563.5H11.5v7.938c0 .31.224.562.5.562s.5-.252.5-.563V12.5h7.938c.31 0 .562-.224.562-.5s-.252-.5-.563-.5H12.5V3.562c0-.31-.224-.562-.5-.562z" fill="currentColor"></path>
+                            </svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r90:">
+                              <div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Ajouter une tâche</p></div></div>
                         </li>
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M11 8.5a2.5 2.5 0 0 1-2 2.45v1.55a2.5 2.5 0 0 0 2.5 2.5h1.55a2.5 2.5 0 1 1 0 1H11.5A3.5 3.5 0 0 1 8 12.5v-1.55a2.5 2.5 0 1 1 3-2.45zm4.5 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM7 8.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1o:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Divisez-la en sous-tâches</p>
-                            </div>
-                          </div>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0-1a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-4.354-8.104a.5.5 0 0 1 .708 0l2.146 2.147 5.146-5.147a.5.5 0 0 1 .708.708l-5.5 5.5a.5.5 0 0 1-.708 0l-2.5-2.5a.5.5 0 0 1 0-.708z" fill="currentColor"></path>
+                            </svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r2s:">
+                              <div class="item-list_item__wklU_">
+                                <p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Achevez-la</p></div></div>
                         </li>
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.333 4A2.667 2.667 0 0 1 20 6.667v10.666A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.333V6.667A2.667 2.667 0 0 1 6.667 4h10.666zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13V6.75a1.75 1.75 0 0 0-1.62-1.745L17.25 5zM9 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM8 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3-1.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1p:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Déplacez des tâches dans des projets</p>
-                            </div>
-                          </div>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM5 6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6zm12 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H7z" fill="currentColor"></path>
+                            </svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r91:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Saisissez une date d'échéance</p></div></div>
+                        </li>
+                        <li class="">
+                          <div class="item-list_icon__WWgTK">
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.854 5.354a1.974 1.974 0 0 0-.272 2.453.5.5 0 1 1-.843.538 2.974 2.974 0 0 1 4.106-4.106.5.5 0 0 1-.536.843 1.976 1.976 0 0 0-2.455.272zm11.839-.272a1.974 1.974 0 0 1 2.725 2.727.5.5 0 1 0 .843.536 2.976 2.976 0 0 0-4.106-4.106.5.5 0 1 0 .538.843zm.245 13.063A7.471 7.471 0 0 1 12 20a7.47 7.47 0 0 1-4.938-1.855l-1.708 1.709a.5.5 0 1 1-.708-.708l1.709-1.708a7.5 7.5 0 1 1 11.29 0l1.709 1.708a.5.5 0 1 1-.708.707l-1.708-1.708zM12 19a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zm0-11v4h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5V8a.5.5 0 1 1 1 0z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r92:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Planifiez un rappel</p><p class="Z2j5FoeQ_umI7vX0SmxF Y5eL4cjJHcHaCQ8EbL7V item-list_onlyForPro__2uV7o">Pro</p></div></div>
                         </li>
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M19.837 5.747c.105.286.163.596.163.92V7h-1v-.25a1.75 1.75 0 0 0-1.523-1.735c.059-.056.121-.109.187-.158.582.522 1.34.851 2.173.89zM15.699 4H6.667A2.667 2.667 0 0 0 4 6.667v10.666A2.667 2.667 0 0 0 6.667 20h10.666A2.667 2.667 0 0 0 20 17.333V9h-1v8.25l-.005.13A1.75 1.75 0 0 1 17.25 19H6.75l-.13-.005A1.75 1.75 0 0 1 5 17.25V6.75l.005-.13A1.75 1.75 0 0 1 6.75 5h8.382c.058-.162.13-.322.218-.477.107-.188.223-.362.349-.523zm-.337 3.5H11a.5.5 0 0 0 0 1h5a.51.51 0 0 0 .224-.053 2.981 2.981 0 0 1-.862-.947zM8.25 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM11 15.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM9.25 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.25 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM8.25 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
-                                fill="currentColor"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M21.5 2.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM22.04 7h-4.08a1 1 0 0 1-.87-1.492c.474-.839 1.444-1.258 2.91-1.258 1.464 0 2.434.42 2.908 1.258A1 1 0 0 1 22.04 7z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1q:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Partagez vos projets</p>
-                            </div>
-                          </div>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.822 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.518 1.084-4.277 1.084-1.113 0-1.92-.197-3.658-.776C10.204 13.178 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777V19.5a.5.5 0 0 1-1 0V5zm4.5 7c-1.367 0-2.535.216-3.5.654V5.277c.886-.515 2.05-.777 3.5-.777.97 0 1.704.178 3.342.724 1.737.58 2.545.776 3.658.776 1.367 0 2.535-.216 3.5-.654v7.377c-.886.515-2.05.777-3.5.777-.97 0-1.704-.178-3.342-.724C10.421 12.196 9.613 12 8.5 12z" fill="currentColor"></path>
+                            </svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r93:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Définissez un niveau de priorité à vos tâches</p></div></div>
+                          </li>
+                        <li class="">
+                          <div class="item-list_icon__WWgTK">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0-1a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-4.354-8.104a.5.5 0 0 1 .708 0l2.146 2.147 5.146-5.147a.5.5 0 0 1 .708.708l-5.5 5.5a.5.5 0 0 1-.708 0l-2.5-2.5a.5.5 0 0 1 0-.708z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r33:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Achevez la tâche</p></div></div>
                         </li>
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4 5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.822 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.518 1.084-4.277 1.084-1.113 0-1.92-.197-3.658-.776C10.204 13.178 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777V19.5a.5.5 0 0 1-1 0V5zm4.5 7c-1.367 0-2.535.216-3.5.654V5.277c.886-.515 2.05-.777 3.5-.777.97 0 1.704.178 3.342.724 1.737.58 2.545.776 3.658.776 1.367 0 2.535-.216 3.5-.654v7.377c-.886.515-2.05.777-3.5.777-.97 0-1.704-.178-3.342-.724C10.421 12.196 9.613 12 8.5 12z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1r:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Définissez un niveau de priorité à vos tâches
-                              </p>
-                            </div>
-                          </div>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 8.5a2.5 2.5 0 0 1-2 2.45v1.55a2.5 2.5 0 0 0 2.5 2.5h1.55a2.5 2.5 0 1 1 0 1H11.5A3.5 3.5 0 0 1 8 12.5v-1.55a2.5 2.5 0 1 1 3-2.45zm4.5 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM7 8.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":rai:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Divisez-la en sous-tâches</p></div></div>
                         </li>
+                        
                         <li class="">
                           <div class="item-list_icon__WWgTK">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.854 5.354a1.974 1.974 0 0 0-.272 2.453.5.5 0 1 1-.843.538 2.974 2.974 0 0 1 4.106-4.106.5.5 0 0 1-.536.843 1.976 1.976 0 0 0-2.455.272zm11.839-.272a1.974 1.974 0 0 1 2.725 2.727.5.5 0 1 0 .843.536 2.976 2.976 0 0 0-4.106-4.106.5.5 0 1 0 .538.843zm.245 13.063A7.471 7.471 0 0 1 12 20a7.47 7.47 0 0 1-4.938-1.855l-1.708 1.709a.5.5 0 1 1-.708-.708l1.709-1.708a7.5 7.5 0 1 1 11.29 0l1.709 1.708a.5.5 0 1 1-.708.707l-1.708-1.708zM12 19a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zm0-11v4h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5V8a.5.5 0 1 1 1 0z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1s:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Réglez des rappels</p>
-                              <p class="font-size Y5eL4cjJHcHaCQ8EbL7V item-list_onlyForPro__2uV7o">Pro</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="">
-                          <div class="item-list_icon__WWgTK">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.5 6h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 13 6.5v3a1.5 1.5 0 0 0 1.5 1.5h3A1.5 1.5 0 0 0 19 9.5v-3A1.5 1.5 0 0 0 17.5 5h-3zm-8 9h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5A1.5 1.5 0 0 1 6.5 13h3a1.5 1.5 0 0 1 1.5 1.5v3A1.5 1.5 0 0 1 9.5 19h-3A1.5 1.5 0 0 1 5 17.5v-3zm9.5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3zM6.5 6h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1t:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Ajoutez des intégrations</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="">
-                          <div class="item-list_icon__WWgTK">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="m3.914 11.086 6.5-6.5A2 2 0 0 1 11.828 4H18a2 2 0 0 1 2 2v6.172a2 2 0 0 1-.586 1.414l-6.5 6.5a2 2 0 0 1-2.828 0l-6.172-6.172a2 2 0 0 1 0-2.828zm.707.707a1 1 0 0 0 0 1.414l6.172 6.172a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 0 0 .293-.707V6a1 1 0 0 0-1-1h-6.172a1 1 0 0 0-.707.293l-6.5 6.5zM14.75 10.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1u:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Créez des vues filtrées</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="">
-                          <div class="item-list_icon__WWgTK">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0-1a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-4.354-8.104a.5.5 0 0 1 .708 0l2.146 2.147 5.146-5.147a.5.5 0 0 1 .708.708l-5.5 5.5a.5.5 0 0 1-.708 0l-2.5-2.5a.5.5 0 0 1 0-.708z"
-                                fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":r1v:">
-                            <div class="item-list_item__wklU_">
-                              <p class="font-size font-p-section-feature">Achever des tâches</p>
-                            </div>
-                          </div>
-                        </li>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.333 4A2.667 2.667 0 0 1 20 6.667v10.666A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.333V6.667A2.667 2.667 0 0 1 6.667 4h10.666zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13V6.75a1.75 1.75 0 0 0-1.62-1.745L17.25 5zM9 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM8 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3-1.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" fill="currentColor"></path>
+                            </svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":raj:">
+                              <div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Déplacez des tâches dans des projets</p></div></div>
+                          </li>
+                        
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.837 5.747c.105.286.163.596.163.92V7h-1v-.25a1.75 1.75 0 0 0-1.523-1.735c.059-.056.121-.109.187-.158.582.522 1.34.851 2.173.89zM15.699 4H6.667A2.667 2.667 0 0 0 4 6.667v10.666A2.667 2.667 0 0 0 6.667 20h10.666A2.667 2.667 0 0 0 20 17.333V9h-1v8.25l-.005.13A1.75 1.75 0 0 1 17.25 19H6.75l-.13-.005A1.75 1.75 0 0 1 5 17.25V6.75l.005-.13A1.75 1.75 0 0 1 6.75 5h8.382c.058-.162.13-.322.218-.477.107-.188.223-.362.349-.523zm-.337 3.5H11a.5.5 0 0 0 0 1h5a.51.51 0 0 0 .224-.053 2.981 2.981 0 0 1-.862-.947zM8.25 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM11 15.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM9.25 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm1.25 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM8.25 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 2.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM22.04 7h-4.08a1 1 0 0 1-.87-1.492c.474-.839 1.444-1.258 2.91-1.258 1.464 0 2.434.42 2.908 1.258A1 1 0 0 1 22.04 7z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":rb9:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Partagez vos projets</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.854 5.354a1.974 1.974 0 0 0-.272 2.453.5.5 0 1 1-.843.538 2.974 2.974 0 0 1 4.106-4.106.5.5 0 0 1-.536.843 1.976 1.976 0 0 0-2.455.272zm11.839-.272a1.974 1.974 0 0 1 2.725 2.727.5.5 0 1 0 .843.536 2.976 2.976 0 0 0-4.106-4.106.5.5 0 1 0 .538.843zm.245 13.063A7.471 7.471 0 0 1 12 20a7.47 7.47 0 0 1-4.938-1.855l-1.708 1.709a.5.5 0 1 1-.708-.708l1.709-1.708a7.5 7.5 0 1 1 11.29 0l1.709 1.708a.5.5 0 1 1-.708.707l-1.708-1.708zM12 19a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zm0-11v4h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5V8a.5.5 0 1 1 1 0z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":ral:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Réglez des rappels</p><p class="Z2j5FoeQ_umI7vX0SmxF Y5eL4cjJHcHaCQ8EbL7V item-list_onlyForPro__2uV7o">Pro</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.023 4.267A1.81 1.81 0 0 0 6.28 5h13.156c.662 0 .863.039 1.07.149a.818.818 0 0 1 .345.346c.11.205.149.407.149 1.069v9.157c.315-.175.563-.426.733-.744.214-.401.267-.757.267-1.54V6.563c0-.784-.053-1.14-.267-1.54a1.817 1.817 0 0 0-.756-.757C20.576 4.053 20.22 4 19.437 4H8.563c-.784 0-1.14.053-1.54.267zM5.563 19c-.783 0-1.139-.053-1.54-.267a1.817 1.817 0 0 1-.756-.756C3.053 17.576 3 17.22 3 16.437V9.563c0-.784.053-1.14.267-1.54a1.81 1.81 0 0 1 .756-.757C4.424 7.053 4.78 7 5.563 7h10.873c.784 0 1.14.053 1.54.267.327.174.583.43.757.756.214.401.267.757.267 1.54v6.873c0 .784-.053 1.14-.267 1.54a1.81 1.81 0 0 1-.756.757c-.401.214-.757.267-1.54.267H16v1.1a1.25 1.25 0 0 1-1.967 1.023L11 19H5.564zM15 20.1V18h1.436c.662 0 .863-.039 1.07-.149a.819.819 0 0 0 .345-.346c.11-.206.149-.407.149-1.069V9.564c0-.662-.039-.864-.149-1.07a.818.818 0 0 0-.346-.345C17.3 8.039 17.098 8 16.436 8H5.564c-.662 0-.864.039-1.07.149a.818.818 0 0 0-.345.346C4.039 8.7 4 8.902 4 9.564v6.872c0 .662.039.863.149 1.07a.818.818 0 0 0 .346.345c.205.11.407.149 1.069.149h5.751l3.292 2.304a.25.25 0 0 0 .393-.205z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":ram:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Discutez dans les commentaires</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0-1a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-4.354-8.104a.5.5 0 0 1 .708 0l2.146 2.147 5.146-5.147a.5.5 0 0 1 .708.708l-5.5 5.5a.5.5 0 0 1-.708 0l-2.5-2.5a.5.5 0 0 1 0-.708z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":ran:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Achever des tâches</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.822 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.518 1.084-4.277 1.084-1.113 0-1.92-.197-3.658-.776C10.204 13.178 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777V19.5a.5.5 0 0 1-1 0V5zm4.5 7c-1.367 0-2.535.216-3.5.654V5.277c.886-.515 2.05-.777 3.5-.777.97 0 1.704.178 3.342.724 1.737.58 2.545.776 3.658.776 1.367 0 2.535-.216 3.5-.654v7.377c-.886.515-2.05.777-3.5.777-.97 0-1.704-.178-3.342-.724C10.421 12.196 9.613 12 8.5 12z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":rbh:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Définissez un niveau de priorité à vos tâches</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 6h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 13 6.5v3a1.5 1.5 0 0 0 1.5 1.5h3A1.5 1.5 0 0 0 19 9.5v-3A1.5 1.5 0 0 0 17.5 5h-3zm-8 9h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5A1.5 1.5 0 0 1 6.5 13h3a1.5 1.5 0 0 1 1.5 1.5v3A1.5 1.5 0 0 1 9.5 19h-3A1.5 1.5 0 0 1 5 17.5v-3zm9.5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zm-1.5.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3zM6.5 6h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":rbj:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Ajoutez des intégrations</p></div></div>
+                          </li>
+                          <li class="">
+                            <div class="item-list_icon__WWgTK">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m3.914 11.086 6.5-6.5A2 2 0 0 1 11.828 4H18a2 2 0 0 1 2 2v6.172a2 2 0 0 1-.586 1.414l-6.5 6.5a2 2 0 0 1-2.828 0l-6.172-6.172a2 2 0 0 1 0-2.828zm.707.707a1 1 0 0 0 0 1.414l6.172 6.172a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 0 0 .293-.707V6a1 1 0 0 0-1-1h-6.172a1 1 0 0 0-.707.293l-6.5 6.5zM14.75 10.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z" fill="currentColor"></path></svg></div><div tabindex="0" class="uGvvFoPursl0yybhMOGs" aria-labelledby=":rbk:"><div class="item-list_item__wklU_"><p class="Z2j5FoeQ_umI7vX0SmxF EkQLWhUQXERswBk6sxIb">Créez des vues filtrées</p></div></div>
+                          </li>
                       </ol>
                     </div>
                   </div>
@@ -1039,7 +989,9 @@ export default {
     },
 
   },
+
   name: 'HeaderBar',
+  
   methods: {
     toggleHeaderRight() {
       this.headerRight = !this.headerRight;
@@ -1051,11 +1003,16 @@ export default {
     handleScroll() {
       // Calculate scroll position here
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop
+      
 
       // Do something with scroll position
       console.log('Scroll position:', scrollPosition)
-    },
+    
   },
+   
+    
+  },
+  
   data() {
     return {
       headerRight: false,
@@ -1065,20 +1022,14 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    // const dotIndicator = document.querySelector('.dot-indicator_dotIndicator__QJt9V');
-
-    // window.addEventListener('scroll', function() {
-    //   const currentPosition = window.scrollY;
-    //   if (currentPosition >= 2615 && currentPosition <= 2720) {
-    //     dotIndicator.classList.add('active');
-    //   } else {
-    //     dotIndicator.classList.remove('active');
-    //   }
-    // });
+    
     // Lấy các progress element
     const progressElements = document.querySelectorAll('.dot-indicator_dotIndicator__QJt9V');
     const sliderElements = document.querySelector('.slider-container_progressBar__l8Sp2');
     const thumbIndicators = document.querySelectorAll('.thumb-indicator_indicator__bwh0p');
+    const olElement = document.querySelector('.item-list_itemList__jPHJI');
+    const liElements = olElement.querySelectorAll('li');
+
 
     // Xác định vị trí scroll hiện tại
     function getCurrentScrollPosition() {
@@ -1088,35 +1039,66 @@ export default {
     // Gán/bỏ class active cho progress tương ứng
     function setActiveProgress() {
       const currentScrollPosition = getCurrentScrollPosition();
-
+      if (currentScrollPosition < 2545) {
+        progressElements[0].classList.remove('dot-indicator_highlighted__HD9kq');
+      }
       if (currentScrollPosition >= 2545 && currentScrollPosition < 2625) {
         progressElements[0].classList.add('active');
         sliderElements.style.setProperty('--progress', '0%');
         thumbIndicators[0].classList.remove('thumb-indicator_indicator__bwh0p_hidden');
+        
+        for (let i = 0; i < liElements.length; i++) {
+    if (i === 0 || i === 1) {
+      liElements[i].style.display = 'flex';
+    } else {
+      liElements[i].style.display = 'none';
+    }
+  }
+
+        
       } else {
         progressElements[0].classList.remove('active');
+        progressElements[1].classList.remove('dot-indicator_highlighted__HD9kq');
         thumbIndicators[0].classList.add('thumb-indicator_indicator__bwh0p_hidden');
-       
+    //     for (let i = 0; i < liElements.length; i++) {
+    // liElements[i].style.display = 'list-item';
+  // }
        
       }
 
       if (currentScrollPosition >= 2626 && currentScrollPosition < 2740) {
         progressElements[0].classList.remove('active');
+        progressElements[0].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[1].classList.add('active');
         sliderElements.style.setProperty('--progress', '33%');
         thumbIndicators[1].classList.remove('thumb-indicator_indicator__bwh0p_hidden');
+        for (let i = 0; i < liElements.length; i++) {
+            if (i === 0 || i === 2 || i === 3 || i === 4 || i === 5) {
+              liElements[i].style.display = 'flex';
+          } else {
+              liElements[i].style.display = 'none';
+        }
+  }
       } else {
         progressElements[1].classList.remove('active');
+        progressElements[2].classList.remove('dot-indicator_highlighted__HD9kq');
         thumbIndicators[1].classList.add('thumb-indicator_indicator__bwh0p_hidden');
 
       }
 
       if (currentScrollPosition >= 2741 && currentScrollPosition < 2820) {
         progressElements[1].classList.remove('active');
+        progressElements[1].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[2].classList.add('active');
         sliderElements.style.setProperty('--progress', '67%');
         thumbIndicators[2].classList.remove('thumb-indicator_indicator__bwh0p_hidden');
-
+        for (let i = 0; i < liElements.length; i++) {
+            if (i === 0 || i === 6 || i === 7 || i === 8 || i === 9 || i === 10 || i === 11) {
+              liElements[i].style.display = 'flex';
+          } else {
+              liElements[i].style.display = 'none';
+        }
+  }
 
       } else {
         progressElements[2].classList.remove('active');
@@ -1126,9 +1108,19 @@ export default {
 
       if (currentScrollPosition >= 2821) {
         progressElements[2].classList.remove('active');
+        progressElements[0].classList.add('dot-indicator_highlighted__HD9kq');
+        progressElements[1].classList.add('dot-indicator_highlighted__HD9kq');
+        progressElements[2].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[3].classList.add('active');
         sliderElements.style.setProperty('--progress', '100%');
         thumbIndicators[3].classList.remove('thumb-indicator_indicator__bwh0p_hidden');
+        for (let i = 0; i < liElements.length; i++) {
+            if (i === 0 || i === 6 || i === 7 || i === 8 || i === 12 || i === 9 || i === 13 || i === 14 || i === 11) {
+              liElements[i].style.display = 'flex';
+          } else {
+              liElements[i].style.display = 'none';
+            }
+        }
 
       } else {
         progressElements[3].classList.remove('active');
@@ -1144,7 +1136,10 @@ export default {
 
 
 
-  },
+
+},
+
+
 }
 </script>
   
