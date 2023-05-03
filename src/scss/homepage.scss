@@ -3,6 +3,9 @@
 @import 'display-variable';
 
 ////////////////////////////////////GLOBAL///////////////////////////////////////////////////////////////////////
+::selection {
+  background-color: rgb(245, 245, 173);
+}
 $coef: 0.93;
 $base-max-width: 27rem; // giá trị mặc định
 $sm-max-width: 27rem; // giá trị mặc định
