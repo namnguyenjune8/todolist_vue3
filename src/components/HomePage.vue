@@ -1173,8 +1173,8 @@ export default {
 }
 
 .header__button {
-  margin-left: 20px;
-  padding: 0px;
+  margin-left: 10px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   float: left;
