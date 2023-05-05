@@ -96,9 +96,9 @@
 
 
             <div class="header-right-task header-right-task-end ">
-              <a class="font-size  button_task_end font font-style  button_Connexion ">Connexion
+              <a class="font-size  zA288Pg0ZRE8YcTi8CRc font button_connexion" style="flex:1">Connexion
               </a>
-              <a class="font-size  button_task_end font font-style  button_Sinscrire ">S'inscrire
+              <a class="font-size  zA288Pg0ZRE8YcTi8CRc font DLF4ip7391hTQFmMhXrA cdc4_xoyu5lt350lFjqA " style="flex:1">S'inscrire
               </a>
 
             </div>
@@ -1191,5 +1191,7 @@ export default {
 .header__button:hover {
   background-color: hsla(53, 10%, 69%, .2);
   ;
-}</style>
+}
+
+</style>
   
