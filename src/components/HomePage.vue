@@ -1034,10 +1034,10 @@ export default {
   //   // Gán/bỏ class active cho progress tương ứng
     function setActiveProgress() {
       const currentScrollPosition = getCurrentScrollPosition();
-      if (currentScrollPosition < 2545) {
+      if (currentScrollPosition < 2475) {
         progressElements[0].classList.remove('dot-indicator_highlighted__HD9kq');
       }
-      if (currentScrollPosition >= 2545 && currentScrollPosition < 2625) {
+      if (currentScrollPosition >= 2475 && currentScrollPosition < 2550) {
         progressElements[0].classList.add('active');
         sliderElements.style.setProperty('--progress', '0%');
         thumbIndicators[0].classList.remove('thumb-indicator_indicator__bwh0p_hidden');
@@ -1061,7 +1061,7 @@ export default {
        
       }
 
-      if (currentScrollPosition >= 2626 && currentScrollPosition < 2740) {
+      if (currentScrollPosition >= 2551 && currentScrollPosition < 2675) {
         progressElements[0].classList.remove('active');
         progressElements[0].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[1].classList.add('active');
@@ -1081,7 +1081,7 @@ export default {
 
       }
 
-      if (currentScrollPosition >= 2741 && currentScrollPosition < 2820) {
+      if (currentScrollPosition >= 2676 && currentScrollPosition < 2760) {
         progressElements[1].classList.remove('active');
         progressElements[1].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[2].classList.add('active');
@@ -1101,7 +1101,7 @@ export default {
        
       }
 
-      if (currentScrollPosition >= 2821) {
+      if (currentScrollPosition >= 2761) {
         progressElements[2].classList.remove('active');
         progressElements[0].classList.add('dot-indicator_highlighted__HD9kq');
         progressElements[1].classList.add('dot-indicator_highlighted__HD9kq');
