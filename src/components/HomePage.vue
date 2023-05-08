@@ -29,16 +29,16 @@
           <div class="menu-task">
             <ul class="header-right-task division-line">
               <li class="button-task">
-                <a class="header__button">Fonctionnalités</a>
+                <a class="header__button padding__button">Fonctionnalités</a>
               </li>
               <li class="button-task">
-                <a class="header__button">Modèles</a>
+                <a class="header__button padding__button">Modèles</a>
               </li>
               <li class="button-task">
-                <a class="header__button">Business</a>
+                <a class="header__button padding__button">Business</a>
               </li>
               <li @click="toggle_Ressources_board" class="button-task ressources-board">
-                <a class="header__button">Ressources
+                <a class="header__button button__ressources">Ressources
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="ressources-task ressources-task-board " :class="{ show: Ressources_board_open }">
@@ -90,7 +90,7 @@
                 </ul>
               </li>
               <li class="button-task tarifs-task" :class="{ show: Ressources_board_open }">
-                <button class="header__button">Tarifs</button>
+                <button class="header__button padding__button">Tarifs</button>
               </li>
             </ul>
 

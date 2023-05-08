@@ -463,7 +463,7 @@ color: $color-grey-07;
 
 @media (min-width: 960px) {
   .font-inline {
-    @include font-inline($base-max-width: 50rem, $sm-max-width: 50.125rem);
+    @include font-inline($base-max-width: 51rem, $sm-max-width: 50.125rem);
   }
 }
 
@@ -1253,8 +1253,58 @@ $column-group-gap: $space-24;
     padding: 0px 0px 615px;
   }
 }
+.ressources-task-board {
+  background-color: #fff;
+  flex-direction: column;
+  gap: $space-4;
+  max-inline-size: 23.4375rem;
+  min-inline-size: calc(100% - 7rem);
+
+}
+@media (min-width: 1120px) {
+  .ressources-task-board {
+  max-inline-size: 23.4375rem;
+  min-inline-size: 23.375rem;
+  }
+}
+// .padding__button {
+//   padding-right: calc(100% - 5rem);
+// }
+// @media (min-width: 1022px) {
+//   .ressources-task-board {
+//     padding-right: 57rem;
+//   }
+// }
 
 
+.fa-angle-down:before {
+  content: "\f107";
+  // margin-left: calc(100% - 10px);
+}
+@media screen and (min-width: 1000px) and (max-width:1023px)  {
+  .fa-angle-down:before {
+    margin-left: 53rem;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 999px){
+  .fa-angle-down:before {
+    margin-left: calc(85vw - 30px);
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 749px) {
+  .fa-angle-down:before {
+    margin-left: calc(85vw - 50px);
+  }
+}
+@media screen and (min-width: 390px) and (max-width:599px) {
+  .fa-angle-down:before {
+    margin-left: calc(85vw - 80px);
+  }
+}
+.button__ressources {
+  display: flex;
+  align-items: center;
+}
 ///////////////////////////////////////RESPONSIVE///////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1485,18 +1535,8 @@ $column-group-gap: $space-24;
       padding: 1px 3.5rem;
       
     }
-    .ressources-task-board {
-      background-color: #fff;
-      flex-direction: column;
-      gap: $space-4;
-      max-inline-size: 23.4375rem;
-      min-inline-size: 47.375rem;
-      margin-left: 1rem;
-  }
-  .fa-angle-down:before {
-    content: "\f107";
-    margin-left: 45rem;
-}
+   
+  
     .ressources-task_dropdown_content {
       display: none;
     }
@@ -1754,14 +1794,7 @@ $column-group-display: flex;
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
     }
-    .ressources-task-board {
-      background-color: #fff;
-      flex-direction: column;
-      gap: $space-4;
-      max-inline-size: 23.4375rem;
-      min-inline-size: 23.375rem;
-  
-    }
+    
     .header-right-task {
       align-items: center;
       display: flex;
