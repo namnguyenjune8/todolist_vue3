@@ -444,7 +444,16 @@ color: $color-grey-07;
 .font-inline {
   @include font-inline();
 }
-
+@media (min-width: 359px) {
+  .font-inline {
+    @include font-inline($base-max-width: 13rem, $xs-max-width: 27rem, $sm-max-width: 27rem);
+  }
+}
+@media (min-width: 430px) {
+  .font-inline {
+    @include font-inline($base-max-width: 18rem, $xs-max-width: 27rem, $sm-max-width: 27rem);
+  }
+}
 @media (min-width: 481px) {
   .font-inline {
     @include font-inline($base-max-width: 20rem, $xs-max-width: 27rem, $sm-max-width: 27rem);
@@ -467,7 +476,7 @@ color: $color-grey-07;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1150px) {
   .font-inline {
     @include font-inline($base-max-width: 68rem, $lg-max-width: 82rem);
   }
@@ -481,9 +490,6 @@ color: $color-grey-07;
   $inline-size: $sm-max-width;
 }
 
-// .font-inline.BNiOPRzcZXhZrycvcnLa {
-//   $inline-size: $lg-max-width;
-// }
 
 
 
@@ -1257,7 +1263,7 @@ $column-group-gap: $space-24;
   background-color: #fff;
   flex-direction: column;
   gap: $space-4;
-  max-inline-size: 23.4375rem;
+  max-inline-size: calc(100% - 7rem);
   min-inline-size: calc(100% - 7rem);
 
 }
@@ -1266,7 +1272,7 @@ $column-group-gap: $space-24;
   max-inline-size: 23.4375rem;
   min-inline-size: 23.375rem;
   }
-}
+} 
 // .padding__button {
 //   padding-right: calc(100% - 5rem);
 // }
@@ -1301,6 +1307,17 @@ $column-group-gap: $space-24;
     margin-left: calc(85vw - 80px);
   }
 }
+@media screen and (min-width: 375px) and (max-width:389px) {
+  .fa-angle-down:before {
+    margin-left: calc(85vw - 90px);
+  }
+}
+@media screen and (min-width: 359px) and (max-width:374px) {
+  .fa-angle-down:before {
+    margin-left: calc(85vw - 90px);
+  }
+}
+
 .button__ressources {
   display: flex;
   align-items: center;
@@ -1478,6 +1495,7 @@ $column-group-gap: $space-24;
     
     .header__right.show {
       display: block;
+     
     }
     .header__right ul {
       list-style: none;
@@ -1503,6 +1521,10 @@ $column-group-gap: $space-24;
     
     .ressources-task.show { 
       display: block;
+      
+    }
+    .ressources-task.show .header__right {
+      height: 42rem;
     }
     
     .ressources-task {
