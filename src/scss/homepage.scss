@@ -476,7 +476,7 @@ color: $color-grey-07;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1230px) {
   .font-inline {
     @include font-inline($base-max-width: 68rem, $lg-max-width: 82rem);
   }
@@ -1286,6 +1286,8 @@ $column-group-gap: $space-24;
 .fa-angle-down:before {
   content: "\f107";
   // margin-left: calc(100% - 10px);
+  margin-top: 5px;
+  margin-left: 5px;
 }
 @media screen and (min-width: 1000px) and (max-width:1023px)  {
   .fa-angle-down:before {
